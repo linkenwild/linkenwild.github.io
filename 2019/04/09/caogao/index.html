@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next pisces" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="//main.css?v=" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+  <meta name="keywords" content="C Language,Python">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="现代工业领域广泛采用传感器，实时监控工业生产中的过程参数，用于分析、优化和协调，实现工业产量增加，产品质量提高。无线传感器网络（Wireless Sensor Networks,WSN）是其中的技术之一[1]，工业自动化技术与传感器相结合，从下层到上层各个维度垂直发展，推动工业从传统生产向智能生产迈进[2]。目前无线接入方式多元化，有短距离无线通信技术和广域网通信技术[4]，其中工业无线技术领域已">
+<meta name="keywords" content="C Language,Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="caogao">
+<meta property="og:url" content="http://yoursite.com/2019/04/09/caogao/index.html">
+<meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
+<meta property="og:description" content="现代工业领域广泛采用传感器，实时监控工业生产中的过程参数，用于分析、优化和协调，实现工业产量增加，产品质量提高。无线传感器网络（Wireless Sensor Networks,WSN）是其中的技术之一[1]，工业自动化技术与传感器相结合，从下层到上层各个维度垂直发展，推动工业从传统生产向智能生产迈进[2]。目前无线接入方式多元化，有短距离无线通信技术和广域网通信技术[4]，其中工业无线技术领域已">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif">
+<meta property="og:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
+<meta property="og:updated_time" content="2019-04-09T14:14:55.123Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="caogao">
+<meta name="twitter:description" content="现代工业领域广泛采用传感器，实时监控工业生产中的过程参数，用于分析、优化和协调，实现工业产量增加，产品质量提高。无线传感器网络（Wireless Sensor Networks,WSN）是其中的技术之一[1]，工业自动化技术与传感器相结合，从下层到上层各个维度垂直发展，推动工业从传统生产向智能生产迈进[2]。目前无线接入方式多元化，有短距离无线通信技术和广域网通信技术[4]，其中工业无线技术领域已">
+<meta name="twitter:image" content="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '',
+    sidebar: "",
+    fancybox: ,
+    tabs: ,
+    motion: "",
+    duoshuo: {
+      userId: 'undefined',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: "",
+      labels: ""
+    }
+  };
+</script>
+
+
+
+
+
+
+
+  <title>caogao | Embedded Developer | 嵌入式爱好者</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container  page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Embedded Developer | 嵌入式爱好者</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Better to get hurt by the truth than comforted with a lie.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/09/caogao/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Linkenwild">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Embedded Developer | 嵌入式爱好者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">caogao</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>现代工业领域广泛采用传感器，实时监控工业生产中的过程参数，用于分析、优化和协调，实现工业产量增加，产品质量提高。无线传感器网络（Wireless Sensor Networks,WSN）是其中的技术之一[1]，工业自动化技术与传感器相结合，从下层到上层各个维度垂直发展，推动工业从传统生产向智能生产迈进[2]。目前无线接入方式多元化，有短距离无线通信技术和广域网通信技术[4]，其中工业无线技术领域已经形成ISA100.11a、WirelessHART和我国自主研发的WIA-PA和WIA-FA标准。目前一方面行业标准化产品渗透率不断提升，另一方面事实是行业企业市场占有率并不高。主要壁垒是与现有IT系统融合程度、成本等其他原因，上游技术、产品平台、方案等的供给方与下游用户的需求不匹配。</p>
+<p>ZigBee技术是一种低速短距离传输的无线协议，底层采用802.15.4标准规约的MAC层与物理层[3]。ZigBee技术从2004年开始推出版本至今，已经发展了数十年，技术趋于成熟和完善[5]。通过大幅简化协议(不到蓝牙技术协议的1/10)，降低了对通信控制器的要求，而且ZigBee免收协议专利费，每块芯片的价格大约为2美元[6][7]。ZigBee技术凭借低功耗、时延短、低成本的特点，在工业控制系统的实时控制领域得到广泛的认可。采用ZigBee技术开发工业无线网络控制设备节点以及搭建测控系统网络，对中小规模的自动化企业来说优势十分明显，竞争力很强。</p>
+<p>基于ZigBee通信技术，布置大规模的无线传感器节点用于现场设备和外界环境的信息数据的感知采集，并将边缘侧数据上传至控制中心进行协同处理、实时控制和监测。基于边缘计算的能力赋能和为数据实时服务的效率赋能，控制中心能实时监控工业现场的状况，及时发现问题，减少生产过程中的安全问题，给企业降低生产成本[8][9]。</p>
+<p>工业上实时性指系统在事件发生后，在不同量级的时间范围内做出反应[10]。工业控制对实时性的需求分为三个等级：工业级的控制需求要求响应时间在<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img">左右即可，而过程级控制一般需要响应时间在<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif" alt="img">以内，运动控制要求响应时间在<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img"> [11]。某公司重项研发项目提出具有实时性要求的无线传感器网络控制系统(Wireless Sensor Network Control System,WSNCS)，由于ZigBee无线技术数据传输可靠、成本低等特点，选择ZigBee方案。项目定位<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif" alt="img">的实时控制需求，期望网络控制系统<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img">刷新周期内轮询节点设备的数量达到50个。</p>
+<p>自动化领域国际厂商Emerson推出的无线实时控制系统在<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img">的刷新周期下支持12个设备接入数，引用Emerson接入设备容量科学估算公式Emerson’s Smart Wireless Gateway Capacity Estimator得出[8][12]，以接入50台设备计，需要<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif" alt="img">的通信时间，实时性远远达不到保证[13]。NXP恩智浦半导体公司作为ZigBee Alliance成员企业，在ZigBee技术研发和应用方面积累了丰富经验[13]。以NXP JN516X系列ZigBee芯片为例，搭载ZigBee芯片的两个设备节点请求应答时间为<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif" alt="img">，设备节点切换目标地址时间为<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif" alt="img">,假设系统存在一个<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif" alt="img">的实时控制的节点分组。<img src="file:///C:/Users/glz-pc/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img">刷新周期下，接入设备为29台，比Emerson’s Smart Wireless Gateway采用的实时控制系统增加17台接入设备[9][14]。仍然达不到项目要求的50台的设备接入数。</p>
+<p>因此，在ZigBee无线网络有限带宽资源和通信速率的约束下，保证控制的实时性和提高带宽资源利用率成为亟待解决的问题[15]。此外，对于自动化过程生产来说，设备节点由于外界因素等其他原因产生故障。在降低企业运行成本、不影响工业生产的前提下，如何快速响应并恢复系统网络的正常运转，提高系统鲁棒性，是一个值得考量和引起重视的问题。通过对现有的网络系统轮询调度机制进行分析、建模仿真，优化并设计轮询调度机制，提高轮询节点数量，充分利用信道资源[16]。</p>
+<p>在多信道协议的原理和研究方面，相关学者做了些工作和实验。文献基于不同节点能够同时在两个或两个以上的信道上进行CSMA/CA冲突避免，ZigBee设备节点具有当前时刻的信道唯一性，即在某个时刻只能工作在一个物理信道上[17]。ZigBee设备具有物理发送器和接收器，同一时刻只能处于发送或者接收任意一种状态，工作于半双工通信模式。</p>
+<p>基于分簇的研究，相关文献中簇头使用一致的物理信道。通过时分复用方式依次占用该主信道，簇内的所有节点由簇首节点管理，即簇头分配不同的物理信道给簇内节点，以避免相互干扰。文献提出不分簇的网络拓扑结构，即实现网络系统内所有节点呈现星型、树型或者网状结构，每个节点对信道的使用是通过主动发起申请获取，而不是事先配置固定占用。这种方式容易产生通信冲突和碰撞，对于网络的运行状态不可知，鲁棒性不强[18]。</p>
+<p>​    网络系统在长时间运行中因某些客观原因可能存在故障节点，为了保证高质量服务，WSN必须能够在执行必要的恢复操作之前检测故障传感节点。Mukhopadhyay 等人提出用于无线传感网络可靠性分析的马尔科夫模型[18]，Bein等人从容错性和可靠性角度研究了无线传感器网络的覆盖问题，提出了三种容错部署模型[19]。</p>
+<p>基于以上的研究现状及文献，提出一种多信道的网络控制系统调度。将网络中所有节点最大化数据传输和数据融合能力，分成若干个簇，通过算法计算出网络中簇的个数以及簇内设备节点的数量[20]。每个簇内分配唯一的数据融合通信信道，簇间主从通信采用固定控制信道，同时创新性地簇内采用令牌机制传输，实现簇内和簇间通信独立进行，能够最大化网络控制系统的设备接入规模，实现企业生产最大化，利润最大化。</p>
+<p><strong>选题意义：</strong></p>
+<p>（1）优化轮询调度方法，系统轮询周期内提升轮询节点设备数量，扩大网络规模，提高产品竞争力。</p>
+<p>（2）创新检错、容错机制设计，提高快速诊断能力，降低维护时间，减少运维压力，提高系统鲁棒性。</p>
+<p>（3）设计隐形令牌通信，缩减冗余帧对带宽资源的占用，提高网络通信效率。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/09/毕设注意事项/" rel="next" title="毕设注意事项">
+                <i class="fa fa-chevron-left"></i> 毕设注意事项
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Linkenwild</p>
+              <p class="site-description motion-element" itemprop="description">七月半，生死无界，叶落纷纷，孤魂野鬼咿，笑我人生残梦</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<span id="busuanzi_container_site_uv">
+ Number of visitors :<span id="busuanzi_value_site_uv"></span>people
+</span>
+
+
+
+
+
+
+
+
+<span id="busuanzi_container_site_pv">
+   Total traffic:<span id="busuanzi_value_site_pv"></span>frequency
+</span>
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">Blog all stations2.1kwords</span>
+</div>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Linkenwild</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="//jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="//src/utils.js?v="></script>
+
+  <script type="text/javascript" src="//src/motion.js?v="></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="//src/affix.js?v="></script>
+
+  <script type="text/javascript" src="//src/schemes/pisces.js?v="></script>
+
+
+
+  
+  <script type="text/javascript" src="//src/scrollspy.js?v="></script>
+<script type="text/javascript" src="//src/post-details.js?v="></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="//src/bootstrap.js?v="></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
