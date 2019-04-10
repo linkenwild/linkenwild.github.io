@@ -264,6 +264,268 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/10/多信道分层分簇/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Linkenwild">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Embedded Developer | 嵌入式爱好者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/10/多信道分层分簇/" itemprop="url">多信道分层分簇</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-10T21:42:49+08:00">
+                2019-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>变量</strong></p>
+<ol>
+<li><!--时隙-->
+</li>
+<li><!--信道-->
+</li>
+<li><!--刷新率-->
+</li>
+</ol>
+<p>节点将收集的数据汇集到一个Base Station(BS)，簇头——负责簇内管理和簇间数据通信工作。</p>
+<p><strong><em>ARCH协议：</em></strong>自适应和鲁棒性信道跳变协议。簇头节点需要在不同信道上来回切换——原因是簇内与簇间通信的信道不同。（簇头使用TDMA机制）</p>
+<p>适用范围：</p>
+<p>簇内通信较多，簇间通信较少的网络拓扑结构</p>
+<p><strong><em>TMCP协议：</em></strong></p>
+<p>不需要节点实时更改信道，</p>
+<p>前提——网络系统严格时间同步很难，且可用信道较少</p>
+<p>子树划分：依据相邻节点干扰较大的分配在不同子树中，距离较远的没有干扰的节点分配到同一子树上。</p>
+<p><em>现状：</em></p>
+<p>ZigBee可用信道不足，只有25/26信道与wifi无交叉</p>
+<p>f=2405+5(k-11)</p>
+<p><strong>建议：</strong>11,25,20,26    原理——频段越低，传输距离越远</p>
+<p>TI公司推荐信道经验：11,5,20,25</p>
+<p><em><u>写于2019/4/10    重庆，小雨</u></em></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/10/图片/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Linkenwild">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Embedded Developer | 嵌入式爱好者">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/10/图片/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-10T16:17:36+08:00">
+                2019-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>基于时分复用的MAC协议<br>    在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。<br>对时分复用网络的改进：<br>1、    基于分簇网络的MAC协议<br>传感器节点固定划分或者自动形成多个簇，每个簇内有一个簇头节点，簇头负责为簇内所有传感器节点分配时槽，收集和处理簇内节点发来的数据，并将数据发送给汇聚节点。<br><img src="https://i.imgur.com/xTv9nsc.jpg" alt></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/10/毕设选题依据/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -928,7 +1190,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1011,7 +1273,7 @@ busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站有9.2k字</span>
+  <span class="post-count">博客全站有9.7k字</span>
 </div>
 
 <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
