@@ -186,7 +186,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            首页
+            首&emsp;&emsp;页
           </a>
         </li>
       
@@ -196,7 +196,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            归档
+            归&emsp;&emsp;档
           </a>
         </li>
       
@@ -285,7 +285,7 @@
 
           
 
-          
+
 
           
 
@@ -303,105 +303,20 @@
 
       
         
-          
-            <p><strong>Altium designer**</strong>快捷键** </p>
+          <p><strong>Altium designer**</strong>快捷键** </p>
 <p>发表于：2019年4月10日星期三  Linkenwild</p>
 <p> <strong>L**</strong>打开层 S打开选择 J 跳转<strong>
  </strong>Q<strong>     </strong>英寸和毫米选择 空格 翻转<strong>
  </strong>选择某物体(导线，过孔等),同时按下Tab键可改变其属性(导线长度，过孔大小等)<strong>
  </strong>选择目标，按住shift拖动**</p>
 <p> <strong>在PCB电气层之间切换（小键盘上的*）。在交互布线的过程中，按此键则换层并自动添加过孔。这很常用。</strong><br> <strong>DXP-&gt;preferences</strong> <strong>系统设置</strong></p>
-<p> <strong>其中General–Use localized resources 中文</strong></p>
-<p> <strong>其中Backup –设置备份时间</strong><br> <strong>树形图标–home</strong><br> <strong>快捷键–右下角help-shortcuts</strong><br> <strong>默认布局–View-Desktop layouts–Default</strong><br> <strong>窗口缩回的速度–DXP-&gt;preferences-&gt;system-&gt;view–Hide delay</strong><br> <strong>打开不同面板–右下角System等等</strong><br> <strong>切换不同窗口–ctrl+tab</strong><br> <strong>放大和缩小—ctrl+鼠标中键滚轴</strong><br> <strong>选取工具栏上的图标，下面状态栏有它对应的一些快捷方式用途</strong><br> <strong>DeSign-Template-Set Template File Name…A4</strong>   <strong>修改右下方的边框(title，日期)格式</strong></p>
-<p> <strong>拖动移动时连线跟着自动延长 Drag—ctrl+鼠标拖动</strong><br> <strong>复制目标—选择目标，按住shift拖动</strong><br> <strong>自动添加元件编号—Tools-&gt;Annotate Schematics</strong><br> <strong>Preferences–&gt;Schematic–&gt;Graphical Editing   Convert Special Strings</strong> <strong>转换特殊字符串</strong><br> <strong>原理图出现红色波浪形表示有违法规则的地方(例如两个同名R1)</strong><br> <strong>编译完原理图，查看Message窗口（注意元件库导出隐藏的VCC，GND引脚)</strong><br> <strong>原理图连接处，或添加NEt，会有四个白色方形小点</strong><br> <strong>总线连接 总net 例如：RB[0..7]   每一导线net分别为：RB0,RB1….</strong><br> <strong>如何全局修改 例如：单击电容C1选中，鼠标右键选择Find Similar Objects (Select Matching 选中，二步骤可以跳过 (1) Part Comment —same Current Footprint —same ,点击OK按钮 (2) Select ALL  (3) SCH Inspector 窗口 修改 Footprint</strong></p>
-<p> <strong>Tools–&gt;FootPrint Manager</strong><br> <strong>分层设计 (1)一种水平设置，N个分图 ，net设置全局(project–&gt;project options–&gt;Options…Net Identifier Scope..Gloal) 不推荐 (2)一种垂直设置，一个总图(Sheet Entry),N个分图(PORT) 连接只能Sheet Entry到PORT</strong><br> <strong>第二种方法： (1)Place sheet Symbol(方框) 和 sheet Entry(放在方框边界内侧) (2)选择sheet Symbol，右键选择”Sheet symbol actions”–creat sheet from symbol</strong><br> <strong>原理图库 (1) File–&gt;New–&gt;Library–&gt;sch.. (2) 右边下方SCH打开SCH Library 窗口 (3) Place-&gt;RecTangle,注意放在原点 (4) Library Components Properties     Designator U?      Comment max232     Symbol Refernece max234 (5) 可将一个元件库分为两个Part,例如parta,partb(通过Tools–&gt;new part)</strong><br> <strong>特殊用途：选择该元件，按F1打开该元件的pdf文档 Library Components Properties–&gt;Parameters for Component –&gt;Add.. Name: HelpURL   Value: C:\zy\abc.pdf#page=5</strong><br> <strong>PCB**</strong>库 (1) File–&gt;New–&gt;Library–&gt;pcb.. (2) 右边下方PCB打开pcb Library 窗口<strong>
- </strong>IPC FootPrint wizard..(<strong>**比较有用)</strong><br> <strong>画图要焊盘要比datasheet中长1mm</strong><br> <strong>集成库 (1) File–&gt;New–&gt;Project–&gt;Interger Library (2) 新建sch.lib和pcb.lib, 在sch.lib中选择Tools–&gt;Model Manage…. (3) Project–&gt;Compile Integrated Library</strong><br> <strong>盲孔（BIIND　VIA）：从印制板内仅延展到一个表层的导通孔。 埋孔（BURIED　VIA）：未延伸到印制板表面的一种导通孔。</strong><br> <strong>PCB**</strong>绘制 (1) 在PCB中 Design–&gt;Import Changes From….. (2) S+N 选择相同net的线 (3) Design–&gt;Board layers &amp; color–&gt;show/hide polygons hide (将覆铜隐藏) （L快捷键） (4) 查看PCB元件，通过打开PCB窗口，选择Components (5) shift+S 单层打开或关闭 (6) 对弱小信号可选择包地处理(Tools–&gt;Outline Selected Object) (7) Tools–&gt;Design Rule Check… (8) File–&gt;Fabrication Outputs–&gt;Gerber Files (可直接给这个文件到工厂)<strong>
- </strong>覆铜： place–&gt;polygon Pour… 1. Pour Over Same Net Polygons Only 相同net铜箔覆盖 2. Pour Over All Same Net Objects   铜箔覆盖相同net部分（将相同net的导线等等融合了) 注意 ：如果要保存为PCB4.0 Binary File(*.pcb), 覆铜要选择网格式，(可将网格Track With和Grid Size设置一样，就如同Solid格式了)<strong>
- </strong>如何隐藏所有Designator(即u1,r1,r2….) (1) PCB filer–&gt;IsDesignator 选择所有Designator (2) PCB Inspector–&gt;Hide<strong>
- </strong>如何将Designator(即u1,r1,r2….)自动放置在元件附件 (1) PCB filer–&gt;IsComponent (2) Align–&gt;Position Component Text….<strong>
- </strong>将PCB翻转 查看反面方便 view–&gt;Filp Board<strong>
- </strong>PCB<strong>**查看层数 Design–&gt;Layer Stack Manager</strong><br> <strong>“**</strong>类” Design–&gt;class 比如新建一个net class ,把Vc3.3 VC5等加入，然后在rule中选择Net class,这样规则适用范围就是自己定义的类了<strong>
- </strong>按键2–2D 按键3–3D**</p>
-<p> <strong>原理图画线：P+W PCB图画线： P+T</strong><br> <strong>CTRL+F</strong>   <strong>在原理图里同快速查找元器件</strong><br> <strong>J+C</strong>   <strong>在PCB里面快速查的元件</strong></p>
-<p> <strong>S+N</strong> <strong>选择net (ctr+H) E+E+A 去掉全部选中物体 T+U+C 删除两个焊点间的导线</strong><br> <strong>shift+S</strong> <strong>单层打开或关闭 shift+C 去掉过滤 Shift+空格键 在交互布线的过程中，切换布线形状</strong><br> <strong>ctrl+**</strong>鼠标左键拖动 == 拖动时连线跟着延长 ctrl+鼠标右键 ==PCB选择相同net，并高亮<strong>
- </strong>ctrl+D hide/show<strong>**层</strong><br> <strong>ctrl+crosspobe ==**</strong>原理图和PCB快速切换 ctrl+上下箭头 ==分图和总图的切换<strong>
- </strong>ctrl+M ==<strong>**测量距离</strong><br> <strong>Backspace**</strong>键 在交互布线（手动布线）的过程中，放弃上一步操作。很常用。**</p>
-<p><strong>Altium designer**</strong>中常用库及部分元…** </p>
-<p>发表于：今天 10:07 | 分类：<a href="http://xiaoyou.qq.com/index.php?mod=blog&amp;u=c265e4bd629300c550df365554dc587e8918d4ff620c4607&amp;category=%E7%94%B5%E5%AD%90%E7%9B%B8%E5%85%B3" target="_blank" rel="noopener">电子相关</a> 阅读：(1) 评论：(0) </p>
-<p><strong>原理图常用库文件： Miscellaneous Devices.ddb Dallas Microprocessor.ddb</strong><br> <strong>Intel Databooks.ddb Protel DOS Schematic Libraries.ddb PCB**</strong>元件常用库： Advpcb.ddb General IC.ddb Miscellaneous.ddb**</p>
-<p> <strong>部分 分立元件库元件名称及中英对照 AND 与门 ANTENNA 天线 BATTERY 直流电源 BELL 铃,钟 BVC 同轴电缆接插件 BRIDEG 1 整流桥(二极管) BRIDEG 2 整流桥(集成块) BUFFER 缓冲器 BUZZER 蜂鸣器 CAP 电容 CAPACITOR 电容 CAPACITOR POL 有极性电容 CAPVAR 可调电容 CIRCUIT BREAKER 熔断丝 COAX 同轴电缆 CON 插口 CRYSTAL 晶体整荡器 DB 并行插口 DIODE 二极管 DIODE SCHOTTKY 稳压二极管 DIODE VARACTOR 变容二极管 DPY_3-SEG 3段LED DPY_7-SEG 7段LED DPY_7-SEG_DP 7段LED(带小数点) ELECTRO 电解电容 FUSE 熔断器 INDUCTOR 电感 INDUCTOR IRON 带铁芯电感 INDUCTOR3 可调电感 JFET N N沟道场效应管 JFET P P沟道场效应管 LAMP 灯泡 LAMP NEDN 起辉器 LED 发光二极管 METER 仪表 MICROPHONE 麦克风 MOSFET MOS管 MOTOR AC 交流电机 MOTOR SERVO 伺服电机 NAND 与非门 NOR 或非门 NOT 非门 NPN NPN三极管 NPN-PHOTO 感光三极管 OPAMP 运放 OR 或门 PHOTO 感光二极管 PNP 三极管 NPN DAR NPN三极管 PNP DAR PNP三极管 POT 滑线变阻器 PELAY-DPDT 双刀双掷继电器 RES1.2 电阻 RES3.4 可变电阻 RESISTOR BRIDGE ? 桥式电阻 RESPACK ? 电阻 SCR 晶闸管 PLUG ? 插头 PLUG AC FEMALE 三相交流插头 SOCKET ? 插座 SOURCE CURRENT 电流源 SOURCE VOLTAGE 电压源 SPEAKER 扬声器 SW ? 开关 SW-DPDY ? 双刀双掷开关 SW-SPST ? 单刀单掷开关 SW-PB 按钮 THERMISTOR 电热调节器 TRANS1 变压器 TRANS2 可调变压器 TRIAC ? 三端双向可控硅 TRIODE ? 三极真空管 VARISTOR 变阻器 ZENER ? 齐纳二极管 DPY_7-SEG_DP 数码管 SW-PB 开关</strong><br> <strong>74**</strong>系列：<strong>
- </strong>74LS00 TTL 2<strong>**输入端四与非门 74LS01 TTL 集电极开路2输入端四与非门 74LS02 TTL 2输入端四或非门 74LS03 TTL 集电极开路2输入端四与非门 74LS122 TTL 可再触发单稳态多谐振荡器 74LS123 TTL 双可再触发单稳态多谐振荡器 74LS125 TTL 三态输出高有效四总线缓冲门 74LS126 TTL 三态输出低有效四总线缓冲门 74LS13 TTL 4输入端双与非施密特触发器 74LS132 TTL 2输入端四与非施密特触发器 74LS133 TTL 13输入端与非门 74LS136 TTL 四异或门 74LS138 TTL 3-8线译码器/复工器 74LS139 TTL 双2-4线译码器/复工器 74LS14 TTL 六反相施密特触发器 74LS145 TTL BCD—十进制译码/驱动器 74LS15 TTL 开路输出3输入端三与门 74LS150 TTL 16选1数据选择/多路开关 74LS151 TTL 8选1数据选择器 74LS153 TTL 双4选1数据选择器 74LS154 TTL 4线—16线译码器 74LS155 TTL 图腾柱输出译码器/分配器 74LS156 TTL 开路输出译码器/分配器 74LS157 TTL 同相输出四2选1数据选择器 74LS158 TTL 反相输出四2选1数据选择器 74LS16 TTL 开路输出六反相缓冲/驱动器 74LS160 TTL 可预置BCD异步清除计数器 74LS161 TTL 可予制四位二进制异步清除计数器 74LS162 TTL 可预置BCD同步清除计数器 74LS163 TTL 可予制四位二进制同步清除计数器 74LS164 TTL 八位串行入/并行输出移位寄存器 74LS165 TTL 八位并行入/串行输出移位寄存器 74LS166 TTL 八位并入/串出移位寄存器 74LS169 TTL 二进制四位加/减同步计数器 74LS17 TTL 开路输出六同相缓冲/驱动器 74LS170 TTL 开路输出4×4寄存器堆 74LS173 TTL 三态输出四位D型寄存器 74LS174 TTL 带公共时钟和复位六D触发器 74LS175 TTL 带公共时钟和复位四D触发器 74LS180 TTL 9位奇数/偶数发生器/校验器 74LS181 TTL 算术逻辑单元/函数发生器 74LS185 TTL 二进制—BCD代码转换器 74LS190 TTL BCD同步加/减计数器 74LS191 TTL 二进制同步可逆计数器 74LS192 TTL 可预置BCD双时钟可逆计数器 74LS193 TTL 可预置四位二进制双时钟可逆计数器 74LS194 TTL 四位双向通用移位寄存器 74LS195 TTL 四位并行通道移位寄存器 74LS196 TTL 十进制/二-十进制可预置计数锁存器 74LS197 TTL 二进制可预置锁存器/计数器 74LS20 TTL 4输入端双与非门 74LS21 TTL 4输入端双与门 74LS22 TTL 开路输出4输入端双与非门 74LS221 TTL 双/单稳态多谐振荡器 74LS240 TTL 八反相三态缓冲器/线驱动器 74LS241 TTL 八同相三态缓冲器/线驱动器 74LS243 TTL 四同相三态总线收发器 74LS244 TTL 八同相三态缓冲器/线驱动器 74LS245 TTL 八同相三态总线收发器 74LS247 TTL BCD—7段15V输出译码/驱动器 74LS248 TTL BCD—7段译码/升压输出驱动器 74LS249 TTL BCD—7段译码/开路输出驱动器 74LS251 TTL 三态输出8选1数据选择器/复工器 74LS253 TTL 三态输出双4选1数据选择器/复工器 74LS256 TTL 双四位可寻址锁存器 74LS257 TTL 三态原码四2选1数据选择器/复工器 74LS258 TTL 三态反码四2选1数据选择器/复工器 74LS259 TTL 八位可寻址锁存器/3-8线译码器 74LS26 TTL 2输入端高压接口四与非门 74LS260 TTL 5输入端双或非门 74LS266 TTL 2输入端四异或非门 74LS27 TTL 3输入端三或非门 74LS273 TTL 带公共时钟复位八D触发器 74LS279 TTL 四图腾柱输出S-R锁存器 74LS28 TTL 2输入端四或非门缓冲器 74LS283 TTL 4位二进制全加器 74LS290 TTL 二/五分频十进制计数器 74LS293 TTL 二/八分频四位二进制计数器 74LS295 TTL 四位双向通用移位寄存器 74LS298 TTL 四2输入多路带存贮开关 74LS299 TTL 三态输出八位通用移位寄存器 74LS30 TTL 8输入端与非门 74LS32 TTL 2输入端四或门 74LS322 TTL 带符号扩展端八位移位寄存器 74LS323 TTL 三态输出八位双向移位/存贮寄存器 74LS33 TTL 开路输出2输入端四或非缓冲器 74LS347 TTL BCD—7段译码器/驱动器 74LS352 TTL 双4选1数据选择器/复工器 74LS353 TTL 三态输出双4选1数据选择器/复工器 74LS365 TTL 门使能输入三态输出六同相线驱动器 74LS365 TTL 门使能输入三态输出六同相线驱动器 74LS366 TTL 门使能输入三态输出六反相线驱动器 74LS367 TTL 4/2线使能输入三态六同相线驱动器 74LS368 TTL 4/2线使能输入三态六反相线驱动器 74LS37 TTL 开路输出2输入端四与非缓冲器 74LS373 TTL 三态同相八D锁存器 74LS374 TTL 三态反相八D锁存器 74LS375 TTL 4位双稳态锁存器 74LS377 TTL 单边输出公共使能八D锁存器 74LS378 TTL 单边输出公共使能六D锁存器 74LS379 TTL 双边输出公共使能四D锁存器 74LS38 TTL 开路输出2输入端四与非缓冲器 74LS380 TTL 多功能八进制寄存器 74LS39 TTL 开路输出2输入端四与非缓冲器 74LS390 TTL 双十进制计数器 74LS393 TTL 双四位二进制计数器 74LS40 TTL 4输入端双与非缓冲器 74LS42 TTL BCD—十进制代码转换器 74LS352 TTL 双4选1数据选择器/复工器 74LS353 TTL 三态输出双4选1数据选择器/复工器 74LS365 TTL 门使能输入三态输出六同相线驱动器 74LS366 TTL 门使能输入三态输出六反相线驱动器 74LS367 TTL 4/2线使能输入三态六同相线驱动器 74LS368 TTL 4/2线使能输入三态六反相线驱动器 74LS37 TTL 开路输出2输入端四与非缓冲器 74LS373 TTL 三态同相八D锁存器 74LS374 TTL 三态反相八D锁存器 74LS375 TTL 4位双稳态锁存器 74LS377 TTL 单边输出公共使能八D锁存器 74LS378 TTL 单边输出公共使能六D锁存器 74LS379 TTL 双边输出公共使能四D锁存器 74LS38 TTL 开路输出2输入端四与非缓冲器 74LS380 TTL 多功能八进制寄存器 74LS39 TTL 开路输出2输入端四与非缓冲器 74LS390 TTL 双十进制计数器 74LS393 TTL 双四位二进制计数器 74LS40 TTL 4输入端双与非缓冲器 74LS42 TTL BCD—十进制代码转换器 74LS447 TTL BCD—7段译码器/驱动器 74LS45 TTL BCD—十进制代码转换/驱动器 74LS450 TTL 16:1多路转接复用器多工器 74LS451 TTL 双8:1多路转接复用器多工器 74LS453 TTL 四4:1多路转接复用器多工器 74LS46 TTL BCD—7段低有效译码/驱动器 74LS460 TTL 十位比较器 74LS461 TTL 八进制计数器 74LS465 TTL 三态同相2与使能端八总线缓冲器 74LS466 TTL 三态反相2与使能八总线缓冲器 74LS467 TTL 三态同相2使能端八总线缓冲器 74LS468 TTL 三态反相2使能端八总线缓冲器 74LS469 TTL 八位双向计数器 74LS47 TTL BCD—7段高有效译码/驱动器 74LS48 TTL BCD—7段译码器/内部上拉输出驱动 74LS490 TTL 双十进制计数器 74LS491 TTL 十位计数器 74LS498 TTL 八进制移位寄存器 74LS50 TTL 2-3/2-2输入端双与或非门 74LS502 TTL 八位逐次逼近寄存器 74LS503 TTL 八位逐次逼近寄存器 74LS51 TTL 2-3/2-2输入端双与或非门 74LS533 TTL 三态反相八D锁存器 74LS534 TTL 三态反相八D锁存器 74LS54 TTL 四路输入与或非门 74LS540 TTL 八位三态反相输出总线缓冲器 74LS55 TTL 4输入端二路输入与或非门 74LS563 TTL 八位三态反相输出触发器 74LS564 TTL 八位三态反相输出D触发器 74LS573 TTL 八位三态输出触发器 74LS574 TTL 八位三态输出D触发器</strong></p>
-<p> <strong>74LS645 TTL</strong> <strong>三态输出八同相总线传送接收器 74LS670 TTL 三态输出4×4寄存器堆 74LS73 TTL 带清除负触发双J-K触发器 74LS74 TTL 带置位复位正触发双D触发器 74LS76 TTL 带预置清除双J-K触发器 74LS83 TTL 四位二进制快速进位全加器 74LS85 TTL 四位数字比较器 74LS86 TTL 2输入端四异或门 74LS90 TTL 可二/五分频十进制计数器 74LS93 TTL 可二/八分频二进制计数器 74LS95 TTL 四位并行输入\输出移位寄存器 74LS97 TTL 6位同步二进制乘法器</strong></p>
-<p>Altium Designer快捷键</p>
-<p>\1. PCB设计快捷键（单次按键）</p>
-<p>单次按键是指按下该键并放开。</p>
-<p>1-01 <em> 在PCB电气层之间切换（小键盘上的</em>）。在交互布线的</p>
-<p>过程中，按此键则换层并自动添加过孔。这很常用。</p>
-<p>1-02 Tab键 在交互布线或放置元件、过孔等对象的过程中修改对象属性。</p>
-<p>例如改变走线的的宽度，这很常用。</p>
-<p>1-03 空格键 在交互布线的过程中，切换布线方向。这很常用。</p>
-<p>1-04 Backspace键 在交互布线（手动布线）的过程中，放弃上一步操作。很常用。</p>
-<p>1-05 主键盘上的1 在交互布线的过程中，切换布线方法（设定每次单击鼠标布1</p>
-<p>段线还是2段线）。</p>
-<p>1-06 主键盘上的2 在交互布线的过程中，添加一个过孔，但不换层。</p>
-<p>1-07 Q 在公制和英制之间切换。</p>
-<p>1-08 Delete 删除已被选择的对象。</p>
-<p>1-09 X 元件以Y轴对称左右翻转</p>
-<p>1-10 Y元件以X轴对称上下翻转</p>
-<p>1-11 End 刷新屏幕</p>
-<p>\2. PCB设计快捷键（组合按键）</p>
-<p>组合按键是指，先按住第一个键不放，然后按下第二个键，再放开这两个键。组合键用+号</p>
-<p>表示。例如Shift+S表示，先按住Shift键不放，然后按下S键，再放开这两个键。</p>
-<p>2-01 Shift+S 切换单层显示和多层显示。</p>
-<p>2-02 Shift+空格键 在交互布线的过程中，切换布线形状。</p>
-<p>2-03 Shift+C 清除当前过滤器。（当显示一片灰暗时，可恢复正常显示）</p>
-<p>2-04 Shift+F  单击在对象上显示查找相似对象的对话框</p>
-<p>2-05 Shift+PgUp 放大到适当大小后，在以最小的步进放大</p>
-<p>2-06 Shift+PgDn 先以最小的步进缩小，缩小到一定的比例后缩小到最小模式</p>
-<p>2-07 Ctrl+PgUp 放大到400%</p>
-<p>2-08 Ctrl+鼠标左键 高亮显示同网络名的对象（鼠标左键必须点到有网络名的对象）</p>
-<p>2-09 Ctrl+R 一次复制，并可连续多次粘贴。</p>
-<p>2-10 Ctrl+C 复制</p>
-<p>2-11 Ctrl+V 粘贴</p>
-<p>2-12 Ctrl+S 保存文档。</p>
-<p>2-13 Ctrl+M 测量距离</p>
-<p>2-14 Alt+End 刷新当前层</p>
-<p>2-15 Alt+Insert 粘贴在当前层</p>
-<p>\3. PCB设计快捷键（多次按键）</p>
-<p>多次按键是指，先按下第一个键并放开，然后按下第二个键并放开，以此类推。多次按键</p>
-<p>用逗号“，”表示。</p>
-<p>多次按键有很多，但是完全可以自己找到。在PCB设计状态下，随便按下A~Z中的一个</p>
-<p>字母（第一次按键），便弹出一个与该字母相关的快捷菜单，菜单提示中的带下划线的字</p>
-<p>母便是第二次按键。</p>
-<p>3-01 J，L 定位到指定的坐标的位置。这时要注意确认左下角的坐标值，</p>
-<p>如果定位不准，可以放大视图并重新定位，如果还是不准，则</p>
-<p>需要修改栅格吸附尺寸。（定位坐标应该为吸附尺寸的整数倍）</p>
-<p>3-02 J，C 定位到指定的元件处。在弹出的对话框内输入该元件的编号。</p>
-<p>Company Ltd. 第2页 共2页</p>
-<p>3-03 R，M 测量任意两点间的距离。</p>
-<p>3-04 R，P 测量两个元素之间的距离。</p>
-<p>3-05 G，G 设定栅格吸附尺寸。</p>
-<p>3-06 O，Y 设置PCB颜色。</p>
-<p>3-07 O，B 设置PCB属性。</p>
-<p>3-08 O，P 设置PCB相关参数</p>
-<p>3-09 O，M 设置PCB层的显示与否。</p>
-<p>3-10 D，K 打开PCB层管理器</p>
-<p>3-11 E，O，S 设置PCB原点。</p>
-<p>\4. PCB元件库设计快捷键（多次按键）</p>
-<p>4-01 E，F，L 设置PCB元件（封装）的元件参考点。（仅用于PCB元件库）</p>
-<p>元件参考点的作用：假设将某元件放置到PCB中，该元件在</p>
-<p>PCB中的位置（X、Y坐标）就是该元件的参考点的位置，</p>
-<p>当在PCB中放置或移动该元件时，鼠标指针将与元件参考点</p>
-<p>对齐。如果在制作元件时元件参考点设置得离元件主体太远，</p>
-<p>则在PCB中移动该元件时，鼠标指针也离该元件太远，不利</p>
-<p>于操作。一般可以将元件的中心或某个焊盘的中心设置为元件</p>
-<p>参考点。</p>
-<p>4-02E，F，C 将PCB元件的中心设置为元件参考点。（仅用于PCB元件库）</p>
-<p>元件的中心是指：该元件的所有焊盘围成的几何区域的中心。</p>
-<p>4-03 E，F，P 将PCB元件的1号焊盘的中心设置为元件参考点。（仅用于PCB元件库）</p>
-<p>预祝各位初学者学业有成！！！</p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/10/AD10快捷键/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -500,7 +415,7 @@
 
           
 
-          
+
 
           
 
@@ -518,32 +433,21 @@
 
       
         
-          
-            <p><strong>摘要：</strong></p>
+          <p><strong>摘要：</strong></p>
 <p>物联网领域的迅猛发展，使大量的传感器得以部署应用，产生研发自动可重构复杂无线网络技术的需求。软件定义网络（SDN）是一种有前途的、应用广泛的自动可重构的无线传感器网络的技术。SDN中，为了分配任务给其他节点并将报文包路由到控制sever，需要动态选择控制节点(激活传感器网络的功能)。对于传感器节点的剩余能量，以及传感器节点之间的传输距离，控制节点的选择问题已经形式化为np难问题。（注：np难问题—一个问题的求解理论上可以得到最优解，但是遍历所有可能的时间复杂度很高，现实中实现该问题的解变得不实际。）物联网智能传感设备由于无法频繁充电，会遇到低电量问题。因此，研发软件定义无线传感网络需要将能效路由机制考虑进去。本文中，提出了一种使用分叉和连接的自适应粒子群的绿色路由算法来最大化延长传感网络的生命周期。FJAPSO在两个层次上进行自动优化:优化控制节点数量和优化控制节点组簇。实验结果表明：FJAPSO比其他目前发展水平表现优异，并且最大化延长传感网络的生命周期。</p>
 <p>SDN→NP难→传感设备电量不足问题→FJAPSO算法→FJAPSO实验结果</p>
 <p>I引言</p>
-<p>​       新兴技术如物联网、云计算、雾计算、大数据，显著的应用在智能家居、基础设施、医疗、零售业、交通运输、安全、监管和其他工业必需品上。IOT的实时性要求已经集成到云计算、雾计算中进行处理和分析高数据流传感数据。物联网基础设施的不断发展，也使得无线传感器网络的结构更加密集。无线传感器网络基本上由能够感知环境和路由转发数据的传感器节点组成，无线传感器网络节点具有有限的通信、存储和计算能力。很多时候，无线传感器网络部署在恶劣的环境中，更换节点不但困难而且代价昂贵。在某些情况下，传感器节点需要在不充电和更换电池的情况下长时间工作。因此，限制能耗是WSN设计的一大挑战。传感器的低内存、低功率和低电池引起了学术界的关注。</p>
-<p>无线传感器网络组成→WSN工作环境→限制能耗问题</p>
-<p>​       随着传感器成本越来越低，海量的IOT设备应用在地理区域内进行实时数据的感知，采集，收集，通信，发送和处理。无线传感器网络的复杂性日益增加，使得手动实时控制和维护如此密集的无线传感器网络变为不可能。这个要求引入了软件定义的无线传感器网络(SDWSN)，克服了传统传感器网络的局限性，并利用WSN实现了自动监控。在SDWSN中，SDSNs代替了传统的传感节点，SDSNs能够自动监控网络故障并且能基于实时监测动态重构其功能。在网络资源虚拟化环境中，SDWSN通过解耦数据方面和控制方面使得可编程控制变得更加便利。这增加了SDN未来的应用范围，以及增强了对虚拟化为基础的云计算雾计算等的适用性。SDWSN的智能控制受到数据方面资源及其在中心控制器中的逻辑实现的影响。该控制器通过标准兼容接口与数据方面资源连接。中心控制器运行着网络操作系统，数据方面和中心控制器的交互是通过分布式簇进行连接。中心控制器上的软件程序用于自动优化网络资源，数据方面设备管理，监控和网络故障监测。该架构如图1所示，在物联网应用上，利用多功能智能传感设备和借助高度自动化，动态可重构和简化的SDWSN进行开发和部署。因此，SDWSN对于IoT时代将来的研究根本上讲是必要的。</p>
-<p>网络中海量的传感设备→引入SDWSN→1、实现自动监控功能→2、动态重构节点功能→讲解SDSN技术→讲解图1架构</p>
-<p>​       SDSNs（软件定义传感网络）分成许多簇，每个簇中由一个控制节点构成。簇中其他节点作为执行具体分配任务的普通SDSNs。为了最小化能耗和避免数据冲突，使用PSO算法。</p>
-<p>1、根据预定数目的簇使用路由算法优化能耗。当网络具有弹性或者可扩展性时，这种方法不会自动调整簇的数量来优化能耗。这是SDWSN路由选择中的一个开销，可能会导致更多的能源消耗。</p>
-<p>2、为了优化距离和能源消耗，使用适应度函数考量SDSNs与控制sever(CS)或CN与CS之间的距离。然而，为了优化传输能量和平衡CNs与CNs之间的负载，簇中SDSNs与CN之间的距离起到重要作用，然而被忽略了。</p>
-<p>3、为了完成像组簇、路由选择和优化簇的数量这样不同的目标，PSO是单独使用的，计算成本很高。</p>
-<p>普通PSO的三点缺点→引入FJAPSO→</p>
-<p>​       为了优化SDWSN路由转发中的能耗，并且在弹性和可扩展网络场景中发挥有效作用，优化控制节点数量和他们之间相对的位置是有必要的。</p>
-<p>1、一种分叉和连接自适应粒子群算法(FJAPSO)，是一种节能(绿色)、双目标和二级优化路由算法。</p>
-<p>2、为了让FJAPSO快速收敛，通过高效地自适应调节惯性权重系数来对PSO算法进行修正。</p>
-<p>3、FJAPSO的每一次迭代中，每个粒子分叉成预定数量的子粒子群中去，然后将子粒子合并成具有最优分叉子粒子解的一个父粒子中。分叉子粒子通过控制节点（位置）的选择来优化能效路由，而父粒子用来优化簇的数目。</p>
-<p>4、提出一种有效的适应度函数，将CNs与CS之间的距离、SDSNs与CN之间的距离考虑进来，通过基于总传输距离平衡簇的大小将传输能量最小化。</p>
-<p>5、实验研究证明FJAPSO比目前其他现有技术更有效。</p>
-<p>FJAPSO→描述分叉连接模型→适应度函数</p>
-
-          
+<p>​       新兴技术如物联网、云计算、雾计算、大数据，显著的应用在智能家居、基础设施、医疗、零售业、交通运输、安全、监管和其他工业必需品上。IOT的实时性要求已经集成到云计算、雾计算中进行处理和分析高数据流传感数据。物联网基础设施的不断发展，也使得无线传感器网络的结构更加密集。
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/10/4-10计划/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
@@ -639,7 +543,7 @@
 
           
 
-          
+
 
           
 
@@ -760,7 +664,7 @@
 
           
 
-          
+
 
           
 
@@ -893,7 +797,7 @@
 
           
 
-          
+
 
           
 
@@ -1016,7 +920,7 @@
 
           
 
-          
+
 
           
 
@@ -1175,9 +1079,45 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <script async src="https://busuanzi.ibruce.info/
+busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<span id="busuanzi_container_site_uv">
+  访客数:<span id="busuanzi_value_site_uv"></span>人次
+</span>
+
+
+  <!--<div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>-->
+
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+
+
+
+<span id="busuanzi_container_site_pv">
+   总访问量:<span id="busuanzi_value_site_pv"></span>次
+</span>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站有11.4k字</span>
+</div>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Linkenwild</span>
 
