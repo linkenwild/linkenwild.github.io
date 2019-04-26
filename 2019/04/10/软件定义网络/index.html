@@ -29,7 +29,15 @@
 <meta name="twitter:title" content="软件定义网络">
 <meta name="twitter:description" content="title: 软件定义网络 date: 2019-04-10 09:43:41 updated: 2019-04-10 20:18:54 摘要： 物联网领域的迅猛发展，使大量的传感器得以部署应用，产生研发自动可重构复杂无线网络技术的需求。软件定义网络（SDN）是一种有前途的、应用广泛的自动可重构的无线传感器网络的技术。SDN中，为了分配任务给其他节点并将报文包路由到控制sever，需要动态选择控制">
 <meta name="twitter:image" content="https://linkenwild.github.io/images/SDN.jpg">
-
+{% if theme.daovoice %}
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "{{theme.daovoice_app_id}}"
+    });
+  daovoice('update');
+  </script>
+{% endif %}
   
 
   
