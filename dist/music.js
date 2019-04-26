@@ -17,5 +17,11 @@ const ap = new APlayer({
         url: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n2/320/52/97/1397406180.mp3',
         cover: 'http://imge.kugou.com/stdmusic/20161010/20161010200518926406.jpg',
       }
+			{
+        name: '钟无艳',
+        artist: '谢安琪',
+        url: 'http://www.ytmp3.cn/down/39157.mp3',
+        cover: 'http://img.ytmp3.cn/image/75.jpg',
+      }
     ]
 });
