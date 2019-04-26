@@ -7,28 +7,28 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>多信道分层分簇 | Embedded Developer | 嵌入式爱好者</title>
+  <title>Hexo FexO主题中加入网页音乐播放 | Embedded Developer | 嵌入式爱好者</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="technical,">
+    <meta name="keywords" content="hexo,">
   
 
-  <meta name="description" content="变量  时隙  时隙  时隙   节点将收集的数据汇集到一个Base Station(BS)，簇头——负责簇内管理和簇间数据通信工作。">
-<meta name="keywords" content="technical">
+  <meta name="description" content="hexo添加网页音乐播放download Aplayer 源码 访问地址 使用git clone下载到本地，    git clone https://github.com/MoePlayer/APlayer解压后将dist文件复制到themes\fexo\source下 新建music.js加入如下内容    const ap = new APlayer({    container: docu">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="多信道分层分簇">
-<meta property="og:url" content="http://yoursite.com/2019/04/10/多信道分层分簇/index.html">
+<meta property="og:title" content="Hexo FexO主题中加入网页音乐播放">
+<meta property="og:url" content="http://yoursite.com/2019/04/26/Hexo-FexO主题中加入网页音乐播放/index.html">
 <meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
-<meta property="og:description" content="变量  时隙  时隙  时隙   节点将收集的数据汇集到一个Base Station(BS)，簇头——负责簇内管理和簇间数据通信工作。">
+<meta property="og:description" content="hexo添加网页音乐播放download Aplayer 源码 访问地址 使用git clone下载到本地，    git clone https://github.com/MoePlayer/APlayer解压后将dist文件复制到themes\fexo\source下 新建music.js加入如下内容    const ap = new APlayer({    container: docu">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://linkenwild.github.io/images/beautiful_girl.png">
-<meta property="og:updated_time" content="2019-04-25T06:29:50.634Z">
+<meta property="og:image" content="https://linkenwild.github.io/images/music_player.jpg">
+<meta property="og:updated_time" content="2019-04-26T13:54:54.059Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="多信道分层分簇">
-<meta name="twitter:description" content="变量  时隙  时隙  时隙   节点将收集的数据汇集到一个Base Station(BS)，簇头——负责簇内管理和簇间数据通信工作。">
-<meta name="twitter:image" content="https://linkenwild.github.io/images/beautiful_girl.png">
+<meta name="twitter:title" content="Hexo FexO主题中加入网页音乐播放">
+<meta name="twitter:description" content="hexo添加网页音乐播放download Aplayer 源码 访问地址 使用git clone下载到本地，    git clone https://github.com/MoePlayer/APlayer解压后将dist文件复制到themes\fexo\source下 新建music.js加入如下内容    const ap = new APlayer({    container: docu">
+<meta name="twitter:image" content="https://linkenwild.github.io/images/music_player.jpg">
   
   
 
@@ -149,17 +149,22 @@ ga('send', 'pageview');
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo添加网页音乐播放"><span class="toc-text">hexo添加网页音乐播放</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新建music-js"><span class="toc-text">新建music.js</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#deployer生成页面，访问即可"><span class="toc-text">deployer生成页面，访问即可</span></a></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
-   <article id="post-多信道分层分簇" class="article article-type-post" itemprop="blogPost">
+   <article id="post-Hexo-FexO主题中加入网页音乐播放" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">多信道分层分簇</h1>
+    <h1 class="post-title">Hexo FexO主题中加入网页音乐播放</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2019.04.10</span>
+        <span>2019.04.26</span>
       </span>
 
       
@@ -172,7 +177,7 @@ ga('send', 'pageview');
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/技术/">技术</a>
+    <a class="article-category-link" href="/categories/hexo美化/">hexo美化</a>
   </span>
 
 
@@ -192,29 +197,14 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <p><strong>变量</strong></p>
-<ol>
-<li><p><!--时隙-->时隙</p>
-</li>
-<li><p><!--信道-->时隙</p>
-</li>
-<li><p><!--刷新率-->时隙</p>
-</li>
-</ol>
-<p>节点将收集的数据汇集到一个Base Station(BS)，簇头——负责簇内管理和簇间数据通信工作。<br><a id="more"></a></p>
-<p><strong><em>ARCH协议：</em></strong>自适应和鲁棒性信道跳变协议。簇头节点需要在不同信道上来回切换——原因是簇内与簇间通信的信道不同。（簇头使用TDMA机制）<br><img src="https://linkenwild.github.io/images/beautiful_girl.png" alt></p>
-<p>适用范围：</p>
-<p>簇内通信较多，簇间通信较少的网络拓扑结构</p>
-<p><strong><em>TMCP协议：</em></strong></p>
-<p>不需要节点实时更改信道，</p>
-<p>前提——网络系统严格时间同步很难，且可用信道较少</p>
-<p>子树划分：依据相邻节点干扰较大的分配在不同子树中，距离较远的没有干扰的节点分配到同一子树上。</p>
-<p><em>现状：</em></p>
-<p>ZigBee可用信道不足，只有25/26信道与wifi无交叉</p>
-<p>f=2405+5(k-11)</p>
-<p><strong>建议：</strong>11,15,20,26    原理——频段越低，传输距离越远</p>
-<p>TI公司推荐信道经验：11,15,20,25</p>
-<p><em><u>写于2019/4/10    重庆，小雨</u></em></p>
+      <h1 id="hexo添加网页音乐播放"><a href="#hexo添加网页音乐播放" class="headerlink" title="hexo添加网页音乐播放"></a>hexo添加网页音乐播放</h1><p><strong>download Aplayer 源码</strong></p>
+<p><a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener">访问地址</a></p>
+<p>使用git clone下载到本地，<br>    git clone <a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener">https://github.com/MoePlayer/APlayer</a><br>解压后将<strong><em>dist</em></strong>文件复制到<strong><em>themes\fexo\source</em></strong>下</p>
+<h1 id="新建music-js"><a href="#新建music-js" class="headerlink" title="新建music.js"></a>新建music.js</h1><p>加入如下内容<br>    const ap = new APlayer({<br>    container: document.getElementById(‘aplayer’),<br>    fixed: true,<br>    autoplay: true,<br>    volume: 0.3,<br>    loop: ‘all’,<br>    audio: [<br>      {<br>        name: ‘时间煮酒’,<br>        artist: ‘郁可唯’,<br>        url: ‘<a href="http://up.mcyt.net/?down/37600.mp3&#39;" target="_blank" rel="noopener">http://up.mcyt.net/?down/37600.mp3&#39;</a>,<br>        cover: ‘<a href="http://imge.kugou.com/stdmusic/20130625/20130625181709936236.jpg&#39;" target="_blank" rel="noopener">http://imge.kugou.com/stdmusic/20130625/20130625181709936236.jpg&#39;</a>,<br>      },<br>      {<br>        name: ‘爱情转移’,<br>        artist: ‘陈奕迅’,<br>        url: ‘<a href="http://other.web.ra01.sycdn.kuwo.cn/resource/n2/320/52/97/1397406180.mp3&#39;" target="_blank" rel="noopener">http://other.web.ra01.sycdn.kuwo.cn/resource/n2/320/52/97/1397406180.mp3&#39;</a>,<br>        cover: ‘<a href="http://imge.kugou.com/stdmusic/20161010/20161010200518926406.jpg&#39;" target="_blank" rel="noopener">http://imge.kugou.com/stdmusic/20161010/20161010200518926406.jpg&#39;</a>,<br>      },<br>            {<br>        name: ‘钟无艳’,<br>        artist: ‘谢安琪’,<br>        url: ‘<a href="http://www.ytmp3.cn/down/39157.mp3&#39;" target="_blank" rel="noopener">http://www.ytmp3.cn/down/39157.mp3&#39;</a>,<br>        cover: ‘<a href="http://img.ytmp3.cn/image/75.jpg&#39;" target="_blank" rel="noopener">http://img.ytmp3.cn/image/75.jpg&#39;</a>,<br>      },<br>            {<br>        name: ‘不将就’,<br>        artist: ‘李荣浩’,<br>        url: ‘<a href="http://www.ytmp3.cn/down/32925.mp3&#39;" target="_blank" rel="noopener">http://www.ytmp3.cn/down/32925.mp3&#39;</a>,<br>        cover: ‘<a href="http://img.ytmp3.cn/image/31.jpg&#39;" target="_blank" rel="noopener">http://img.ytmp3.cn/image/31.jpg&#39;</a>,<br>      },<br>             {<br>        name: “岁月神偷”,<br>        artist: ‘金玟岐’,<br>        url: ‘<a href="http://www.ytmp3.cn/down/44537.mp3&#39;" target="_blank" rel="noopener">http://www.ytmp3.cn/down/44537.mp3&#39;</a>,<br>        cover: ‘<a href="http://img.ytmp3.cn/image/69.jpg&#39;" target="_blank" rel="noopener">http://img.ytmp3.cn/image/69.jpg&#39;</a>,<br>      },<br>      {<br>        name: ‘惊蛰’,<br>        artist: ‘音阙诗听/王梓钰’,<br>        url: ‘<a href="http://www.ytmp3.cn/down/48755.mp3&#39;" target="_blank" rel="noopener">http://www.ytmp3.cn/down/48755.mp3&#39;</a>,<br>        cover: ‘<a href="http://p1.music.126.net/5MmXpaP9r88tNzExPGMI8Q==/109951163370350985.jpg?param=130y130&#39;" target="_blank" rel="noopener">http://p1.music.126.net/5MmXpaP9r88tNzExPGMI8Q==/109951163370350985.jpg?param=130y130&#39;</a>,<br>      }</p>
+<pre><code>]
+});
+</code></pre><h1 id="deployer生成页面，访问即可"><a href="#deployer生成页面，访问即可" class="headerlink" title="deployer生成页面，访问即可"></a>deployer生成页面，访问即可</h1><pre><code>hexo g -d
+</code></pre><p><img src="https://linkenwild.github.io/images/music_player.jpg" alt></p>
 
     
   </div>
@@ -252,10 +242,10 @@ ga('send', 'pageview');
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2019/04/10/软件定义网络/">
+    <a class="show pull-left" href="/2019/04/26/hexo博客美化添加live2d萌宠/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2019/04/10/基于时分复用的MAC协议/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
