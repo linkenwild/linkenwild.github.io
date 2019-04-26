@@ -7,28 +7,28 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>基于时分复用的MAC协议 | Embedded Developer | 嵌入式爱好者</title>
+  <title>博客主题迁移记 | Embedded Developer | 嵌入式爱好者</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="technical,">
+    <meta name="keywords" content="remind,">
   
 
-  <meta name="description" content="基于时分复用的MAC协议在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。 对时分复用网络的改进 基于分簇网络">
-<meta name="keywords" content="technical">
+  <meta name="description" content="开始博客建站那会，使用的是业界最普遍的Next主题，很多人聊起这个主题，都说太普遍了，是一种烂大街的情景。想着哪天把主题换了吧，今天在网络上冲浪时，偶然间发现fexo这个主题不错。 Fexo界面简洁，白色为主色调。而且二级网页、三级网页切入自然流畅，本人非常喜欢这个主题，加载速度相比于Next主题加速了不少。">
+<meta name="keywords" content="remind">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于时分复用的MAC协议">
-<meta property="og:url" content="http://yoursite.com/2019/04/10/基于时分复用的MAC协议/index.html">
+<meta property="og:title" content="博客主题迁移记">
+<meta property="og:url" content="http://yoursite.com/2019/04/25/博客主题迁移记/index.html">
 <meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
-<meta property="og:description" content="基于时分复用的MAC协议在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。 对时分复用网络的改进 基于分簇网络">
+<meta property="og:description" content="开始博客建站那会，使用的是业界最普遍的Next主题，很多人聊起这个主题，都说太普遍了，是一种烂大街的情景。想着哪天把主题换了吧，今天在网络上冲浪时，偶然间发现fexo这个主题不错。 Fexo界面简洁，白色为主色调。而且二级网页、三级网页切入自然流畅，本人非常喜欢这个主题，加载速度相比于Next主题加速了不少。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://linkenwild.github.io/images/802.11与802.15.4信道重叠.jpg">
-<meta property="og:updated_time" content="2019-04-25T06:30:55.370Z">
+<meta property="og:image" content="https://linkenwild.github.io/images/fexo.jpg">
+<meta property="og:updated_time" content="2019-04-26T07:34:41.452Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基于时分复用的MAC协议">
-<meta name="twitter:description" content="基于时分复用的MAC协议在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。 对时分复用网络的改进 基于分簇网络">
-<meta name="twitter:image" content="https://linkenwild.github.io/images/802.11与802.15.4信道重叠.jpg">
+<meta name="twitter:title" content="博客主题迁移记">
+<meta name="twitter:description" content="开始博客建站那会，使用的是业界最普遍的Next主题，很多人聊起这个主题，都说太普遍了，是一种烂大街的情景。想着哪天把主题换了吧，今天在网络上冲浪时，偶然间发现fexo这个主题不错。 Fexo界面简洁，白色为主色调。而且二级网页、三级网页切入自然流畅，本人非常喜欢这个主题，加载速度相比于Next主题加速了不少。">
+<meta name="twitter:image" content="https://linkenwild.github.io/images/fexo.jpg">
 
   
 
@@ -151,20 +151,20 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基于时分复用的MAC协议"><span class="toc-text">基于时分复用的MAC协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对时分复用网络的改进"><span class="toc-text">对时分复用网络的改进</span></a></li></ol>
-  </div>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Fexo"><span class="toc-text">Fexo</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#分类"><span class="toc-text">分类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#评论系统"><span class="toc-text">评论系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主要定位"><span class="toc-text">主要定位</span></a></li></ol>
+  </li></div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-基于时分复用的MAC协议" class="article article-type-post" itemprop="blogPost">
+   <article id="post-博客主题迁移记" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">基于时分复用的MAC协议</h1>
+    <h1 class="post-title">博客主题迁移记</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2019.04.10</span>
+        <span>2019.04.25</span>
       </span>
 
       
@@ -177,7 +177,7 @@ ga('send', 'pageview');
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/技术/">技术</a>
+    <a class="article-category-link" href="/categories/生活/">生活</a>
   </span>
 
 
@@ -197,10 +197,11 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <h2 id="基于时分复用的MAC协议"><a href="#基于时分复用的MAC协议" class="headerlink" title="基于时分复用的MAC协议"></a>基于时分复用的MAC协议</h2><pre><code>在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。
-</code></pre><h2 id="对时分复用网络的改进"><a href="#对时分复用网络的改进" class="headerlink" title="对时分复用网络的改进"></a>对时分复用网络的改进</h2><blockquote>
-<p><code>基于分簇网络的MAC协议</code><br>    传感器节点固定划分或者自动形成多个簇，每个簇内有一个簇头节点，簇头负责为簇内所有传感器节点分配时槽，收集和处理簇内节点发来的数据，并将数据发送给汇聚节点。<br><img src="https://linkenwild.github.io/images/802.11与802.15.4信道重叠.jpg" alt></p>
-</blockquote>
+      <p>开始博客建站那会，使用的是业界最普遍的<strong>Next</strong>主题，很多人聊起这个主题，都说太普遍了，是一种烂大街的情景。想着哪天把主题换了吧，今天在网络上冲浪时，偶然间发现<strong><em>fexo</em></strong>这个主题不错。</p>
+<h2 id="Fexo"><a href="#Fexo" class="headerlink" title="Fexo"></a>Fexo</h2><p>界面简洁，白色为主色调。而且二级网页、三级网页切入自然流畅，本人非常喜欢这个主题，加载速度相比于<strong>Next</strong>主题加速了不少。<a id="more"></a></p>
+<h1 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h1><p>在这个主题下，可以轻松的接入自己的GitHub主页，Twitter主页以及自己的Instagram主页。</p>
+<h2 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h2><p>也了解到有gitment和gitalk这几种评论系统，好像都很复杂，不适合小白去折腾。今天有幸看到一篇关于<em>valine</em>的介绍，只需要简单几步，就可以将博文的评论系统设置成功。评论默认语句占行符里我这样写道：<br><code>Youth is not a period of time,it is a state of mind.</code></p>
+<h2 id="主要定位"><a href="#主要定位" class="headerlink" title="主要定位"></a>主要定位</h2><p>其实博客主要定位就是每天工作的记录总结，框架搭好了，就可以接下来往里面加入自己的所思所想所为了。<br><img src="https://linkenwild.github.io/images/fexo.jpg" alt></p>
 
     
   </div>
@@ -238,10 +239,10 @@ ga('send', 'pageview');
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2019/04/10/毕设选题依据/">
+    <a class="show pull-left" href="/2019/04/25/hello-world/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2019/04/10/多信道分层分簇/">
+    <a class="show pull-right" href="/2019/04/26/学习Git/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>

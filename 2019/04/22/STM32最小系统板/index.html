@@ -7,28 +7,26 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>基于时分复用的MAC协议 | Embedded Developer | 嵌入式爱好者</title>
+  <title>STM32最小系统板 | Embedded Developer | 嵌入式爱好者</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="technical,">
+    <meta name="keywords" content="STM32,">
   
 
-  <meta name="description" content="基于时分复用的MAC协议在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。 对时分复用网络的改进 基于分簇网络">
-<meta name="keywords" content="technical">
+  <meta name="description" content="构成 主控MCU 电源 复位 晶振（外置） 指示灯 按键 下载SWD/JLINK">
+<meta name="keywords" content="STM32">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于时分复用的MAC协议">
-<meta property="og:url" content="http://yoursite.com/2019/04/10/基于时分复用的MAC协议/index.html">
+<meta property="og:title" content="STM32最小系统板">
+<meta property="og:url" content="http://yoursite.com/2019/04/22/STM32最小系统板/index.html">
 <meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
-<meta property="og:description" content="基于时分复用的MAC协议在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。 对时分复用网络的改进 基于分簇网络">
+<meta property="og:description" content="构成 主控MCU 电源 复位 晶振（外置） 指示灯 按键 下载SWD/JLINK">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://linkenwild.github.io/images/802.11与802.15.4信道重叠.jpg">
-<meta property="og:updated_time" content="2019-04-25T06:30:55.370Z">
+<meta property="og:updated_time" content="2019-04-26T07:34:30.213Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基于时分复用的MAC协议">
-<meta name="twitter:description" content="基于时分复用的MAC协议在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。 对时分复用网络的改进 基于分簇网络">
-<meta name="twitter:image" content="https://linkenwild.github.io/images/802.11与802.15.4信道重叠.jpg">
+<meta name="twitter:title" content="STM32最小系统板">
+<meta name="twitter:description" content="构成 主控MCU 电源 复位 晶振（外置） 指示灯 按键 下载SWD/JLINK">
 
   
 
@@ -151,20 +149,20 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基于时分复用的MAC协议"><span class="toc-text">基于时分复用的MAC协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对时分复用网络的改进"><span class="toc-text">对时分复用网络的改进</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#构成"><span class="toc-text">构成</span></a></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-基于时分复用的MAC协议" class="article article-type-post" itemprop="blogPost">
+   <article id="post-STM32最小系统板" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">基于时分复用的MAC协议</h1>
+    <h1 class="post-title">STM32最小系统板</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2019.04.10</span>
+        <span>2019.04.22</span>
       </span>
 
       
@@ -177,7 +175,7 @@ ga('send', 'pageview');
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/技术/">技术</a>
+    <a class="article-category-link" href="/categories/硬件/">硬件</a>
   </span>
 
 
@@ -197,10 +195,15 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <h2 id="基于时分复用的MAC协议"><a href="#基于时分复用的MAC协议" class="headerlink" title="基于时分复用的MAC协议"></a>基于时分复用的MAC协议</h2><pre><code>在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。
-</code></pre><h2 id="对时分复用网络的改进"><a href="#对时分复用网络的改进" class="headerlink" title="对时分复用网络的改进"></a>对时分复用网络的改进</h2><blockquote>
-<p><code>基于分簇网络的MAC协议</code><br>    传感器节点固定划分或者自动形成多个簇，每个簇内有一个簇头节点，簇头负责为簇内所有传感器节点分配时槽，收集和处理簇内节点发来的数据，并将数据发送给汇聚节点。<br><img src="https://linkenwild.github.io/images/802.11与802.15.4信道重叠.jpg" alt></p>
-</blockquote>
+      <h1 id="构成"><a href="#构成" class="headerlink" title="构成"></a>构成</h1><ul>
+<li>主控MCU</li>
+<li>电源</li>
+<li>复位</li>
+<li>晶振（外置）</li>
+<li>指示灯</li>
+<li>按键</li>
+<li>下载SWD/JLINK</li>
+</ul>
 
     
   </div>
@@ -238,10 +241,10 @@ ga('send', 'pageview');
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2019/04/10/毕设选题依据/">
+    <a class="show pull-left" href="/2019/04/21/2019年的第一件数码新品/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2019/04/10/多信道分层分簇/">
+    <a class="show pull-right" href="/2019/04/25/hello-world/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
