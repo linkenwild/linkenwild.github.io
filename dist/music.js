@@ -11,12 +11,6 @@ const ap = new APlayer({
         url: 'http://up.mcyt.net/?down/37600.mp3',
         cover: 'http://imge.kugou.com/stdmusic/20130625/20130625181709936236.jpg',
       },
-      {
-        name: '爱情转移',
-        artist: '陈奕迅',
-        url: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n2/320/52/97/1397406180.mp3',
-        cover: 'http://imge.kugou.com/stdmusic/20161010/20161010200518926406.jpg',
-      },
 			{
         name: '钟无艳',
         artist: '谢安琪',
@@ -28,12 +22,6 @@ const ap = new APlayer({
         artist: '李荣浩',
         url: 'http://www.ytmp3.cn/down/32925.mp3',
         cover: 'http://img.ytmp3.cn/image/31.jpg',
-      },
-			 {
-        name: "岁月神偷",
-        artist: '金玟岐',
-        url: 'http://www.ytmp3.cn/down/44537.mp3',
-        cover: 'http://img.ytmp3.cn/image/69.jpg',
       },
       {
         name: '惊蛰',
