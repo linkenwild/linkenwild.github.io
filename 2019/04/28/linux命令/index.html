@@ -24,7 +24,7 @@
 <meta property="og:description" content="1 cd命令 cd 是change directory的意思，即切换目录。    cd /home 进入‘/home’目录 比如cd /c 表示进入C盘cd /e/Blog b表示进入E盘的Blog文件夹  2 pwd命令pwd命令显示当前工作路径  Linux中用 pwd 命令来查看”当前工作目录“的完整路径。 简单得说，每当你在终端进行操作时，你都会有一个当前工作目录。  在不太确定当前位置时">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://linkenwild.github.io/images/linux_ls.jpg">
-<meta property="og:updated_time" content="2019-04-28T03:13:06.006Z">
+<meta property="og:updated_time" content="2019-04-29T03:28:18.334Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux命令">
 <meta name="twitter:description" content="1 cd命令 cd 是change directory的意思，即切换目录。    cd /home 进入‘/home’目录 比如cd /c 表示进入C盘cd /e/Blog b表示进入E盘的Blog文件夹  2 pwd命令pwd命令显示当前工作路径  Linux中用 pwd 命令来查看”当前工作目录“的完整路径。 简单得说，每当你在终端进行操作时，你都会有一个当前工作目录。  在不太确定当前位置时">
@@ -237,14 +237,12 @@ ga('send', 'pageview');
 <p>将目录 /g/查阅资料/算法 下的所有文件及其子目录复制到目录 /g/查阅资料/gossip</p>
 </blockquote>
 <blockquote>
-<p>cp -r /usr/men /usr/zh<br>    cp -r /g/查阅资料/算法 /g/查阅资料/gossip</p>
-</blockquote>
+<p>cp -r /usr/men /usr/zh</p>
+<pre><code>```javascript
+cp -r /g/查阅资料/算法 /g/查阅资料/gossip```
+</code></pre></blockquote>
 <h1 id="5-mkdir创建文件夹命令"><a href="#5-mkdir创建文件夹命令" class="headerlink" title="5 mkdir创建文件夹命令"></a>5 mkdir创建文件夹命令</h1><blockquote>
-<p>mkdir [选项] DirName</p>
-</blockquote>
-<pre><code>mkdir /g/查阅资料/gossip
-</code></pre><blockquote>
-<p>表示在<em>/g/查阅资料</em>  下面建立了gossip文件夹</p>
+<p>mkdir [选项] DirName<br>    <code>javascriptmkdir /g/查阅资料/gossip</code><br>表示在<em>/g/查阅资料</em>  下面建立了gossip文件夹</p>
 </blockquote>
 <h1 id="6-rm删除文件夹"><a href="#6-rm删除文件夹" class="headerlink" title="6 rm删除文件夹"></a>6 rm删除文件夹</h1><blockquote>
 <p>rm [选项] DirName</p>
@@ -258,8 +256,7 @@ ga('send', 'pageview');
 <blockquote>
 <p>-r 将目录及以下之档案亦逐一删除。</p>
 </blockquote>
-<pre><code>rm -r gossip
-</code></pre><p><strong>表示将gossip文件夹删除</strong></p>
+<p> <code>javascriptrm -r gossip</code><br><strong>表示将gossip文件夹删除</strong></p>
 <h1 id="7-mv命令"><a href="#7-mv命令" class="headerlink" title="7 mv命令"></a>7 mv命令</h1><blockquote>
 <p>-f ：force强制的意思，如果目标文件已经存在，不会询问而直接覆盖</p>
 </blockquote>
