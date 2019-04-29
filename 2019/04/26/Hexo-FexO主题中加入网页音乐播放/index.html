@@ -15,19 +15,19 @@
     <meta name="keywords" content="hexo,">
   
 
-  <meta name="description" content="hexo添加网页音乐播放download Aplayer 源码 访问地址 使用git clone下载到本地，`git clone https://github.com/MoePlayer/APlayer  解压后将**dist**文件复制到**themes\fexo\source**下  # 新建music.js # 加入如下内容 const ap = new APlayer({ containe">
+  <meta name="description" content="hexo添加网页音乐播放download Aplayer 源码 访问地址 使用git clone下载到本地， git clone https://github.com/MoePlayer/APlayer  解压后将dist文件复制到themes\fexo\source下 新建music.js加入如下内容     const ap = new APlayer({     container: doc">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo FexO主题中加入网页音乐播放">
 <meta property="og:url" content="http://yoursite.com/2019/04/26/Hexo-FexO主题中加入网页音乐播放/index.html">
 <meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
-<meta property="og:description" content="hexo添加网页音乐播放download Aplayer 源码 访问地址 使用git clone下载到本地，`git clone https://github.com/MoePlayer/APlayer  解压后将**dist**文件复制到**themes\fexo\source**下  # 新建music.js # 加入如下内容 const ap = new APlayer({ containe">
+<meta property="og:description" content="hexo添加网页音乐播放download Aplayer 源码 访问地址 使用git clone下载到本地， git clone https://github.com/MoePlayer/APlayer  解压后将dist文件复制到themes\fexo\source下 新建music.js加入如下内容     const ap = new APlayer({     container: doc">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://linkenwild.github.io/images/music_player.jpg">
-<meta property="og:updated_time" content="2019-04-28T01:26:26.078Z">
+<meta property="og:updated_time" content="2019-04-29T03:36:41.990Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo FexO主题中加入网页音乐播放">
-<meta name="twitter:description" content="hexo添加网页音乐播放download Aplayer 源码 访问地址 使用git clone下载到本地，`git clone https://github.com/MoePlayer/APlayer  解压后将**dist**文件复制到**themes\fexo\source**下  # 新建music.js # 加入如下内容 const ap = new APlayer({ containe">
+<meta name="twitter:description" content="hexo添加网页音乐播放download Aplayer 源码 访问地址 使用git clone下载到本地， git clone https://github.com/MoePlayer/APlayer  解压后将dist文件复制到themes\fexo\source下 新建music.js加入如下内容     const ap = new APlayer({     container: doc">
 <meta name="twitter:image" content="https://linkenwild.github.io/images/music_player.jpg">
   
   
@@ -151,7 +151,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo添加网页音乐播放"><span class="toc-text">hexo添加网页音乐播放</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo添加网页音乐播放"><span class="toc-text">hexo添加网页音乐播放</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#新建music-js"><span class="toc-text">新建music.js</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#deployer生成页面，访问即可"><span class="toc-text">deployer生成页面，访问即可</span></a></li></ol>
   </div>
 
 
@@ -199,61 +199,60 @@ ga('send', 'pageview');
     
       <h1 id="hexo添加网页音乐播放"><a href="#hexo添加网页音乐播放" class="headerlink" title="hexo添加网页音乐播放"></a>hexo添加网页音乐播放</h1><p><strong>download Aplayer 源码</strong></p>
 <p><a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener">访问地址</a></p>
-<p>使用git clone下载到本地，<br><code>`</code>git clone <a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener">https://github.com/MoePlayer/APlayer</a></p>
-<pre><code>
-解压后将**dist**文件复制到**themes\fexo\source**下
-
-# 新建music.js #
-加入如下内容
-</code></pre><pre><code>const ap = new APlayer({
-container: document.getElementById(&#39;aplayer&#39;),
-fixed: true,
-autoplay: true,
-volume: 0.3,
-loop: &#39;all&#39;,
-audio: [
-  {
-    name: &#39;时间煮酒&#39;,
-    artist: &#39;郁可唯&#39;,
-    url: &#39;http://up.mcyt.net/?down/37600.mp3&#39;,
-    cover: &#39;http://imge.kugou.com/stdmusic/20130625/20130625181709936236.jpg&#39;,
-  },
-  {
-    name: &#39;爱情转移&#39;,
-    artist: &#39;陈奕迅&#39;,
-    url: &#39;http://other.web.ra01.sycdn.kuwo.cn/resource/n2/320/52/97/1397406180.mp3&#39;,
-    cover: &#39;http://imge.kugou.com/stdmusic/20161010/20161010200518926406.jpg&#39;,
-  },
-        {
-    name: &#39;钟无艳&#39;,
-    artist: &#39;谢安琪&#39;,
-    url: &#39;http://www.ytmp3.cn/down/39157.mp3&#39;,
-    cover: &#39;http://img.ytmp3.cn/image/75.jpg&#39;,
-  },
-        {
-    name: &#39;不将就&#39;,
-    artist: &#39;李荣浩&#39;,
-    url: &#39;http://www.ytmp3.cn/down/32925.mp3&#39;,
-    cover: &#39;http://img.ytmp3.cn/image/31.jpg&#39;,
-  },
-         {
-    name: &quot;岁月神偷&quot;,
-    artist: &#39;金玟岐&#39;,
-    url: &#39;http://www.ytmp3.cn/down/44537.mp3&#39;,
-    cover: &#39;http://img.ytmp3.cn/image/69.jpg&#39;,
-  },
-  {
-    name: &#39;惊蛰&#39;,
-    artist: &#39;音阙诗听/王梓钰&#39;,
-    url: &#39;http://www.ytmp3.cn/down/48755.mp3&#39;,
-    cover: &#39;http://p1.music.126.net/5MmXpaP9r88tNzExPGMI8Q==/109951163370350985.jpg?param=130y130&#39;,
-  }            
-]
-});
-</code></pre><pre><code>
-# deployer生成页面，访问即可 #
-```hexo g -d
-</code></pre><p><img src="https://linkenwild.github.io/images/music_player.jpg" alt></p>
+<p>使用git clone下载到本地，</p>
+<pre class=" language-shell"><code class="language-shell">git clone https://github.com/MoePlayer/APlayer
+</code></pre>
+<p>解压后将<strong>dist</strong>文件复制到<strong>themes\fexo\source</strong>下</p>
+<h1 id="新建music-js"><a href="#新建music-js" class="headerlink" title="新建music.js"></a>新建music.js</h1><p>加入如下内容</p>
+<pre class=" language-shell"><code class="language-shell">    const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    fixed: true,
+    autoplay: true,
+    volume: 0.3,
+    loop: 'all',
+    audio: [
+      {
+        name: '时间煮酒',
+        artist: '郁可唯',
+        url: 'http://up.mcyt.net/?down/37600.mp3',
+        cover: 'http://imge.kugou.com/stdmusic/20130625/20130625181709936236.jpg',
+      },
+      {
+        name: '爱情转移',
+        artist: '陈奕迅',
+        url: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n2/320/52/97/1397406180.mp3',
+        cover: 'http://imge.kugou.com/stdmusic/20161010/20161010200518926406.jpg',
+      },
+            {
+        name: '钟无艳',
+        artist: '谢安琪',
+        url: 'http://www.ytmp3.cn/down/39157.mp3',
+        cover: 'http://img.ytmp3.cn/image/75.jpg',
+      },
+            {
+        name: '不将就',
+        artist: '李荣浩',
+        url: 'http://www.ytmp3.cn/down/32925.mp3',
+        cover: 'http://img.ytmp3.cn/image/31.jpg',
+      },
+             {
+        name: "岁月神偷",
+        artist: '金玟岐',
+        url: 'http://www.ytmp3.cn/down/44537.mp3',
+        cover: 'http://img.ytmp3.cn/image/69.jpg',
+      },
+      {
+        name: '惊蛰',
+        artist: '音阙诗听/王梓钰',
+        url: 'http://www.ytmp3.cn/down/48755.mp3',
+        cover: 'http://p1.music.126.net/5MmXpaP9r88tNzExPGMI8Q==/109951163370350985.jpg?param=130y130',
+      }            
+    ]
+    });
+</code></pre>
+<h1 id="deployer生成页面，访问即可"><a href="#deployer生成页面，访问即可" class="headerlink" title="deployer生成页面，访问即可"></a>deployer生成页面，访问即可</h1><pre class=" language-shell"><code class="language-shell">hexo g -d
+</code></pre>
+<p><img src="https://linkenwild.github.io/images/music_player.jpg" alt></p>
 
     
   </div>
