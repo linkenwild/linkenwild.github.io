@@ -7,28 +7,30 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>基于时分复用的MAC协议 | Embedded Developer | 嵌入式爱好者</title>
+  <title>事业考知乎经验笔记总结 | Embedded Developer | 嵌入式爱好者</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="technical,">
+    <meta name="keywords" content="事业单位考试,">
   
 
-  <meta name="description" content="基于时分复用的MAC协议在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。 对时分复用网络的改进 基于分簇网络">
-<meta name="keywords" content="technical">
+  <meta name="description" content="高效备考事业单位考试 方法——狂刷题 事业单位考试资料论坛  十九大热点，民法  粉笔公考事业单位题库  隔段时间有个模考，定期参加   刷题的书：华图5880题和中公的6000题相对中公好一点知识要点推荐粉笔事业单位系统班，最好看一遍，再刷题。闲鱼有卖。  时政：粉笔时政课1块钱，关注粉笔公众号，里面有时政热点，公众号：人民日报，人民日报评论，半月谈，华公公考，纵横公考，粉笔公考，腰果公考，">
+<meta name="keywords" content="事业单位考试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于时分复用的MAC协议">
-<meta property="og:url" content="http://yoursite.com/2019/04/10/基于时分复用的MAC协议/index.html">
+<meta property="og:title" content="事业考知乎经验笔记总结">
+<meta property="og:url" content="http://yoursite.com/2019/05/01/事业考知乎经验笔记总结/index.html">
 <meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
-<meta property="og:description" content="基于时分复用的MAC协议在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。 对时分复用网络的改进 基于分簇网络">
+<meta property="og:description" content="高效备考事业单位考试 方法——狂刷题 事业单位考试资料论坛  十九大热点，民法  粉笔公考事业单位题库  隔段时间有个模考，定期参加   刷题的书：华图5880题和中公的6000题相对中公好一点知识要点推荐粉笔事业单位系统班，最好看一遍，再刷题。闲鱼有卖。  时政：粉笔时政课1块钱，关注粉笔公众号，里面有时政热点，公众号：人民日报，人民日报评论，半月谈，华公公考，纵横公考，粉笔公考，腰果公考，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://linkenwild.github.io/images/802.11与802.15.4信道重叠.jpg">
-<meta property="og:updated_time" content="2019-04-25T06:30:55.370Z">
+<meta property="og:image" content="https://linkenwild.github.io/images/公共基础.jpg">
+<meta property="og:image" content="https://linkenwild.github.io/images/宪法.jpg">
+<meta property="og:image" content="https://linkenwild.github.io/images/山东事业单位考.jpg">
+<meta property="og:updated_time" content="2019-05-01T08:01:00.042Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基于时分复用的MAC协议">
-<meta name="twitter:description" content="基于时分复用的MAC协议在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。 对时分复用网络的改进 基于分簇网络">
-<meta name="twitter:image" content="https://linkenwild.github.io/images/802.11与802.15.4信道重叠.jpg">
+<meta name="twitter:title" content="事业考知乎经验笔记总结">
+<meta name="twitter:description" content="高效备考事业单位考试 方法——狂刷题 事业单位考试资料论坛  十九大热点，民法  粉笔公考事业单位题库  隔段时间有个模考，定期参加   刷题的书：华图5880题和中公的6000题相对中公好一点知识要点推荐粉笔事业单位系统班，最好看一遍，再刷题。闲鱼有卖。  时政：粉笔时政课1块钱，关注粉笔公众号，里面有时政热点，公众号：人民日报，人民日报评论，半月谈，华公公考，纵横公考，粉笔公考，腰果公考，">
+<meta name="twitter:image" content="https://linkenwild.github.io/images/公共基础.jpg">
   
   
 
@@ -139,20 +141,20 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基于时分复用的MAC协议"><span class="toc-text">基于时分复用的MAC协议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对时分复用网络的改进"><span class="toc-text">对时分复用网络的改进</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#高效备考事业单位考试"><span class="toc-text">高效备考事业单位考试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法——狂刷题"><span class="toc-text">方法——狂刷题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#刷题的书：华图5880题和中公的6000题"><span class="toc-text">刷题的书：华图5880题和中公的6000题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#申论："><span class="toc-text">申论：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#事业单位报考："><span class="toc-text">事业单位报考：</span></a></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-基于时分复用的MAC协议" class="article article-type-post" itemprop="blogPost">
+   <article id="post-事业考知乎经验笔记总结" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">基于时分复用的MAC协议</h1>
+    <h1 class="post-title">事业考知乎经验笔记总结</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2019.04.10</span>
+        <span>2019.05.01</span>
       </span>
 
       
@@ -165,7 +167,7 @@ ga('send', 'pageview');
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/技术/">技术</a>
+    <a class="article-category-link" href="/categories/知乎摘录/">知乎摘录</a>
   </span>
 
 
@@ -185,10 +187,38 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <h2 id="基于时分复用的MAC协议"><a href="#基于时分复用的MAC协议" class="headerlink" title="基于时分复用的MAC协议"></a>基于时分复用的MAC协议</h2><pre><code>在传感器网络中采用TDMA机制，就是为每个节点分配独立的用于数据发送或结束的时槽，而节点在其他空闲时槽内转入睡眠状态。TDMA没有竞争机制的碰撞重传问题，数据传输不需要过多的控制信息。但是，TDMA需要严格的时间同步。节点之间为了完成任务需要协同工作，同样不可避免的需要时间同步。缺点是：网络可扩展性不足，很难调整时间帧的长度和时槽的分配。
-</code></pre><h2 id="对时分复用网络的改进"><a href="#对时分复用网络的改进" class="headerlink" title="对时分复用网络的改进"></a>对时分复用网络的改进</h2><blockquote>
-<p><code>基于分簇网络的MAC协议</code><br>    传感器节点固定划分或者自动形成多个簇，每个簇内有一个簇头节点，簇头负责为簇内所有传感器节点分配时槽，收集和处理簇内节点发来的数据，并将数据发送给汇聚节点。<br><img src="https://linkenwild.github.io/images/802.11与802.15.4信道重叠.jpg" alt></p>
+      <h1 id="高效备考事业单位考试"><a href="#高效备考事业单位考试" class="headerlink" title="高效备考事业单位考试"></a>高效备考事业单位考试</h1><hr>
+<h2 id="方法——狂刷题"><a href="#方法——狂刷题" class="headerlink" title="方法——狂刷题"></a>方法——狂刷题</h2><blockquote>
+<p>事业单位考试资料论坛</p>
+<blockquote>
+<p>十九大热点，民法</p>
 </blockquote>
+<p>粉笔公考事业单位题库</p>
+<blockquote>
+<p>隔段时间有个模考，定期参加</p>
+</blockquote>
+</blockquote>
+<h3 id="刷题的书：华图5880题和中公的6000题"><a href="#刷题的书：华图5880题和中公的6000题" class="headerlink" title="刷题的书：华图5880题和中公的6000题"></a><del>刷题的书：华图5880题和中公的6000题</del></h3><p>相对<strong>中公</strong>好一点<br>知识要点推荐粉笔事业单位系统班，最好看一遍，再刷题。闲鱼有卖。</p>
+<hr>
+<p>时政：粉笔时政课1块钱，关注<strong>粉笔公众号</strong>，里面有时政热点，<br>公众号：<strong>人民日报，人民日报评论，半月谈，华公公考，纵横公考，粉笔公考，腰果公考，</strong></p>
+<hr>
+<p>##节目：<br>新闻1+1，焦点访谈，将改革进行到底，法治中国，下载离线听</p>
+<hr>
+<h2 id="申论："><a href="#申论：" class="headerlink" title="申论："></a>申论：</h2><p>粉笔系统班_材料作文专项课，事业单位申论没公务员高，多练标题和三个合题的分论点，开头结尾有模版，多积累。</p>
+<hr>
+<h1 id="事业单位报考："><a href="#事业单位报考：" class="headerlink" title="事业单位报考："></a>事业单位报考：</h1><p>离家近，事业单位求个稳定，工资不多，</p>
+<hr>
+<p><a href="https://www.zhihu.com/question/23883149" target="_blank" rel="noopener">知乎参考链接</a></p>
+<hr>
+<ul>
+<li><img src="https://linkenwild.github.io/images/公共基础.jpg" alt></li>
+</ul>
+<ul>
+<li><img src="https://linkenwild.github.io/images/宪法.jpg" alt></li>
+</ul>
+<ul>
+<li><img src="https://linkenwild.github.io/images/山东事业单位考.jpg" alt>​</li>
+</ul>
 
     
   </div>
@@ -226,10 +256,10 @@ ga('send', 'pageview');
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2019/04/10/毕设选题依据/">
+    <a class="show pull-left" href="/2019/04/29/Markdown教程/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2019/04/10/多信道分层分簇/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
