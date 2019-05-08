@@ -7,28 +7,28 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>运算放大器的理解 | Embedded Developer | 嵌入式爱好者</title>
+  <title>ubuntu安装过程记录 | Embedded Developer | 嵌入式爱好者</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="技术分享,">
+    <meta name="keywords" content="技术分析,">
   
 
-  <meta name="description" content="运算放大器 理想运放 理想运放是输入阻抗无穷大，输出阻抗为零的放大器。  运算放大器的两大重要原则">
-<meta name="keywords" content="技术分享">
+  <meta name="description" content="我的第一次ubuntu安装记录 碎碎念 之前十分好奇ubuntu，使用VMware软件安装的ubuntu虚拟机，但是是拷贝的别的工程，ubuntu版本号是12.04。自己想动手操作一下安装最新的18.04版本，今天写下这些记录和过程。  安装过程技术支持 本次安装过程中，不解之处向中许多爱好者作了请教和咨询，给出了相当多的建议。  下载ubuntu镜像ISO文件使用telegram群友提供的国内a">
+<meta name="keywords" content="技术分析">
 <meta property="og:type" content="article">
-<meta property="og:title" content="运算放大器的理解">
-<meta property="og:url" content="http://yoursite.com/2019/05/06/运算放大器的理解/index.html">
+<meta property="og:title" content="ubuntu安装过程记录">
+<meta property="og:url" content="http://yoursite.com/2019/05/07/ubuntu安装过程记录/index.html">
 <meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
-<meta property="og:description" content="运算放大器 理想运放 理想运放是输入阻抗无穷大，输出阻抗为零的放大器。  运算放大器的两大重要原则">
+<meta property="og:description" content="我的第一次ubuntu安装记录 碎碎念 之前十分好奇ubuntu，使用VMware软件安装的ubuntu虚拟机，但是是拷贝的别的工程，ubuntu版本号是12.04。自己想动手操作一下安装最新的18.04版本，今天写下这些记录和过程。  安装过程技术支持 本次安装过程中，不解之处向中许多爱好者作了请教和咨询，给出了相当多的建议。  下载ubuntu镜像ISO文件使用telegram群友提供的国内a">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://linkenwild.github.io/images/amplifier.jpg">
-<meta property="og:updated_time" content="2019-05-06T03:21:59.191Z">
+<meta property="og:image" content="https://linkenwild.github.io/images/虚拟机配置.jpg">
+<meta property="og:updated_time" content="2019-05-08T02:09:18.736Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="运算放大器的理解">
-<meta name="twitter:description" content="运算放大器 理想运放 理想运放是输入阻抗无穷大，输出阻抗为零的放大器。  运算放大器的两大重要原则">
-<meta name="twitter:image" content="https://linkenwild.github.io/images/amplifier.jpg">
+<meta name="twitter:title" content="ubuntu安装过程记录">
+<meta name="twitter:description" content="我的第一次ubuntu安装记录 碎碎念 之前十分好奇ubuntu，使用VMware软件安装的ubuntu虚拟机，但是是拷贝的别的工程，ubuntu版本号是12.04。自己想动手操作一下安装最新的18.04版本，今天写下这些记录和过程。  安装过程技术支持 本次安装过程中，不解之处向中许多爱好者作了请教和咨询，给出了相当多的建议。  下载ubuntu镜像ISO文件使用telegram群友提供的国内a">
+<meta name="twitter:image" content="https://linkenwild.github.io/images/虚拟机配置.jpg">
   
   
 
@@ -139,20 +139,20 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#运算放大器"><span class="toc-text">运算放大器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#理想运放"><span class="toc-text">理想运放</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#运算放大器的两大重要原则"><span class="toc-text">运算放大器的两大重要原则</span></a></li></ol></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#我的第一次ubuntu安装记录"><span class="toc-text">我的第一次ubuntu安装记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#碎碎念"><span class="toc-text">碎碎念</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装过程技术支持"><span class="toc-text">安装过程技术支持</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#下载ubuntu镜像ISO文件"><span class="toc-text">下载ubuntu镜像ISO文件</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#使用VMware建立虚拟机工程"><span class="toc-text">使用VMware建立虚拟机工程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置如图所示"><span class="toc-text">配置如图所示</span></a></li>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-运算放大器的理解" class="article article-type-post" itemprop="blogPost">
+   <article id="post-ubuntu安装过程记录" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">运算放大器的理解</h1>
+    <h1 class="post-title">ubuntu安装过程记录</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2019.05.06</span>
+        <span>2019.05.07</span>
       </span>
 
       
@@ -165,7 +165,7 @@ ga('send', 'pageview');
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/硬件/">硬件</a>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
   </span>
 
 
@@ -185,19 +185,21 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <h1 id="运算放大器"><a href="#运算放大器" class="headerlink" title="运算放大器"></a>运算放大器</h1><hr>
-<h2 id="理想运放"><a href="#理想运放" class="headerlink" title="理想运放"></a>理想运放</h2><hr>
-<p>理想运放是输入阻抗无穷大，输出阻抗为零的放大器。</p>
+      <h1 id="我的第一次ubuntu安装记录"><a href="#我的第一次ubuntu安装记录" class="headerlink" title="我的第一次ubuntu安装记录"></a>我的第一次ubuntu安装记录</h1><hr>
+<h3 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h3><hr>
+<p>之前十分好奇ubuntu，使用VMware软件安装的ubuntu虚拟机，但是是拷贝的别的工程，ubuntu版本号是12.04。自己想动手操作一下安装最新的18.04版本，今天写下这些记录和过程。</p>
 <hr>
-<h3 id="运算放大器的两大重要原则"><a href="#运算放大器的两大重要原则" class="headerlink" title="运算放大器的两大重要原则"></a>运算放大器的两大重要原则</h3><a id="more"></a>
-<ol>
-<li>虚短<br>即输入端正相输入端电压和反相输入端电压相等  </li>
-<li>虚断<br>即输入端和输出断电流为0</li>
-</ol>
+<h2 id="安装过程技术支持"><a href="#安装过程技术支持" class="headerlink" title="安装过程技术支持"></a>安装过程技术支持</h2><hr>
+<p>本次安装过程中，不解之处向<a href></a>中许多爱好者作了请教和咨询，给出了相当多的建议。</p>
 <hr>
-<p>有一篇博客写的十分优秀，此处贴上链接</p>
-<p><a href="https://blog.csdn.net/superanters/article/details/9787745" target="_blank" rel="noopener">简易讲解运放_superanters</a></p>
-<p><img src="https://linkenwild.github.io/images/amplifier.jpg" alt></p>
+<h5 id="下载ubuntu镜像ISO文件"><a href="#下载ubuntu镜像ISO文件" class="headerlink" title="下载ubuntu镜像ISO文件"></a>下载ubuntu镜像ISO文件</h5><p>使用telegram群友提供的国内aliyun地址：<a href="https://mirrors.aliyun.com/ubuntu-releases/18.04.2/" target="_blank" rel="noopener">ubuntun download</a></p>
+<hr>
+<h2 id="使用VMware建立虚拟机工程"><a href="#使用VMware建立虚拟机工程" class="headerlink" title="使用VMware建立虚拟机工程"></a>使用VMware建立虚拟机工程</h2><ul>
+<li>根据向导建立工程</li>
+<li>建立好之后将ISO文件导入工程</li>
+</ul>
+<hr>
+<h2 id="配置如图所示"><a href="#配置如图所示" class="headerlink" title="配置如图所示"></a>配置如图所示</h2><p><img src="https://linkenwild.github.io/images/虚拟机配置.jpg" alt></p>
 
     
   </div>
@@ -235,10 +237,10 @@ ga('send', 'pageview');
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2019/05/01/事业考知乎经验笔记总结/">
+    <a class="show pull-left" href="/2019/05/06/运算放大器的理解/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2019/05/07/ubuntu安装过程记录/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
