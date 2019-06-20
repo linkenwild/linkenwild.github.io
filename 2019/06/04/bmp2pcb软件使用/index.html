@@ -7,32 +7,31 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>如何添加店员提醒-微信收款小账本 | Embedded Developer | 嵌入式爱好者</title>
+  <title>PCB中添加logo | Embedded Developer | 嵌入式爱好者</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="remind,">
+    <meta name="keywords" content="技术分享,">
   
 
-  <meta name="description" content="如何设置使得在微信收款小程序中，添加店员接收通知–使得被添加的人能够：  接收你的收款通知 查看你当天的收款详情    第一步   第二步   第三步   第四步   第五步   搞定！">
-<meta name="keywords" content="remind">
+  <meta name="description" content="原因 在画PCB中，需要将logo加到top overlay层。下面讲如何实现。  工具 使用的是Altium Designer 15并且使用软件已经建好的一个工程。  下载logo绘制脚本 链接: https://pan.baidu.com/s/1LfSw3zsXjSx2P4oS8hFs6A 提取码: 4axy  生成bmp文件 方法  选择图片，使用Windows自带的画图软件打开，不做任何改">
+<meta name="keywords" content="技术分享">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何添加店员提醒-微信收款小账本">
-<meta property="og:url" content="http://yoursite.com/2019/05/17/如何添加店员提醒-微信收款小账本/index.html">
+<meta property="og:title" content="PCB中添加logo">
+<meta property="og:url" content="http://yoursite.com/2019/06/04/bmp2pcb软件使用/index.html">
 <meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
-<meta property="og:description" content="如何设置使得在微信收款小程序中，添加店员接收通知–使得被添加的人能够：  接收你的收款通知 查看你当天的收款详情    第一步   第二步   第三步   第四步   第五步   搞定！">
+<meta property="og:description" content="原因 在画PCB中，需要将logo加到top overlay层。下面讲如何实现。  工具 使用的是Altium Designer 15并且使用软件已经建好的一个工程。  下载logo绘制脚本 链接: https://pan.baidu.com/s/1LfSw3zsXjSx2P4oS8hFs6A 提取码: 4axy  生成bmp文件 方法  选择图片，使用Windows自带的画图软件打开，不做任何改">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan1.jpg">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan2.jpg">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan3.jpg">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan4.jpg">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan5.jpg">
-<meta property="og:updated_time" content="2019-05-17T14:10:10.334Z">
+<meta property="og:image" content="https://linkenwild.github.io/images/danseweitu.png">
+<meta property="og:image" content="https://linkenwild.github.io/images/jiaoben.png">
+<meta property="og:image" content="https://linkenwild.github.io/images/ok.jpg">
+<meta property="og:image" content="https://linkenwild.github.io/images/logo.jpg">
+<meta property="og:updated_time" content="2019-06-04T09:44:03.605Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何添加店员提醒-微信收款小账本">
-<meta name="twitter:description" content="如何设置使得在微信收款小程序中，添加店员接收通知–使得被添加的人能够：  接收你的收款通知 查看你当天的收款详情    第一步   第二步   第三步   第四步   第五步   搞定！">
-<meta name="twitter:image" content="https://linkenwild.github.io/images/wechatshoukuan1.jpg">
+<meta name="twitter:title" content="PCB中添加logo">
+<meta name="twitter:description" content="原因 在画PCB中，需要将logo加到top overlay层。下面讲如何实现。  工具 使用的是Altium Designer 15并且使用软件已经建好的一个工程。  下载logo绘制脚本 链接: https://pan.baidu.com/s/1LfSw3zsXjSx2P4oS8hFs6A 提取码: 4axy  生成bmp文件 方法  选择图片，使用Windows自带的画图软件打开，不做任何改">
+<meta name="twitter:image" content="https://linkenwild.github.io/images/danseweitu.png">
   
   
 
@@ -143,20 +142,20 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一步"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二步"><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三步"><span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第四步"><span class="toc-text">第四步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第五步"><span class="toc-text">第五步</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#搞定！"><span class="toc-text">搞定！</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#原因"><span class="toc-text">原因</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#工具"><span class="toc-text">工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下载logo绘制脚本"><span class="toc-text">下载logo绘制脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#生成bmp文件"><span class="toc-text">生成bmp文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#打开DXP软件，选择DXP下的运行脚本"><span class="toc-text">打开DXP软件，选择DXP下的运行脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#浏览找到已下载的脚本"><span class="toc-text">浏览找到已下载的脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#选中-OK"><span class="toc-text">选中 OK</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单击load，选择单色位图bmp图像"><span class="toc-text">单击load，选择单色位图bmp图像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#点击convert-，几秒后，生成logo"><span class="toc-text">点击convert ，几秒后，生成logo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复制粘贴到pcb文件中"><span class="toc-text">复制粘贴到pcb文件中</span></a></li></ol></li></ol></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-如何添加店员提醒-微信收款小账本" class="article article-type-post" itemprop="blogPost">
+   <article id="post-bmp2pcb软件使用" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">如何添加店员提醒-微信收款小账本</h1>
+    <h1 class="post-title">PCB中添加logo</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2019.05.17</span>
+        <span>2019.06.04</span>
       </span>
 
       
@@ -169,7 +168,7 @@ ga('send', 'pageview');
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/生活杂记/">生活杂记</a>
+    <a class="article-category-link" href="/categories/软件介绍/">软件介绍</a>
   </span>
 
 
@@ -189,29 +188,25 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <p>如何设置使得在微信收款小程序中，添加店员接收通知–使得被添加的人能够：</p>
-<ul>
-<li>接收你的收款通知</li>
-<li>查看你当天的收款详情</li>
-</ul>
+      <h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><hr>
+<p>在画PCB中，需要将logo加到top overlay层。下面讲如何实现。</p>
 <hr>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><hr>
+<p>使用的是Altium Designer 15<br>并且使用软件已经建好的一个工程。</p>
 <hr>
-<h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan1.jpg" alt></p>
+<h2 id="下载logo绘制脚本"><a href="#下载logo绘制脚本" class="headerlink" title="下载logo绘制脚本"></a>下载logo绘制脚本</h2><hr>
+<p>链接: <a href="https://pan.baidu.com/s/1LfSw3zsXjSx2P4oS8hFs6A" target="_blank" rel="noopener">https://pan.baidu.com/s/1LfSw3zsXjSx2P4oS8hFs6A</a> 提取码: 4axy</p>
 <hr>
-<hr>
-<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan2.jpg" alt></p>
-<hr>
-<hr>
-<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan3.jpg" alt></p>
-<hr>
-<hr>
-<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan4.jpg" alt></p>
-<hr>
-<hr>
-<h1 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan5.jpg" alt></p>
-<hr>
-<hr>
-<h2 id="搞定！"><a href="#搞定！" class="headerlink" title="搞定！"></a>搞定！</h2>
+<h3 id="生成bmp文件"><a href="#生成bmp文件" class="headerlink" title="生成bmp文件"></a>生成bmp文件</h3><hr>
+<p>方法</p>
+<ol>
+<li>选择图片，使用Windows自带的画图软件打开，不做任何改动另存为<strong>单色位图</strong>保存。</li>
+</ol>
+<p><img src="https://linkenwild.github.io/images/danseweitu.png" alt></p>
+<h3 id="打开DXP软件，选择DXP下的运行脚本"><a href="#打开DXP软件，选择DXP下的运行脚本" class="headerlink" title="打开DXP软件，选择DXP下的运行脚本"></a>打开DXP软件，选择DXP下的运行脚本</h3><p><img src="https://linkenwild.github.io/images/jiaoben.png" alt></p>
+<h3 id="浏览找到已下载的脚本"><a href="#浏览找到已下载的脚本" class="headerlink" title="浏览找到已下载的脚本"></a>浏览找到已下载的脚本</h3><h3 id="选中-OK"><a href="#选中-OK" class="headerlink" title="选中 OK"></a>选中 OK</h3><p><img src="https://linkenwild.github.io/images/ok.jpg" alt></p>
+<h3 id="单击load，选择单色位图bmp图像"><a href="#单击load，选择单色位图bmp图像" class="headerlink" title="单击load，选择单色位图bmp图像"></a>单击load，选择单色位图bmp图像</h3><h3 id="点击convert-，几秒后，生成logo"><a href="#点击convert-，几秒后，生成logo" class="headerlink" title="点击convert ，几秒后，生成logo"></a>点击convert ，几秒后，生成logo</h3><p><img src="https://linkenwild.github.io/images/logo.jpg" alt></p>
+<h3 id="复制粘贴到pcb文件中"><a href="#复制粘贴到pcb文件中" class="headerlink" title="复制粘贴到pcb文件中"></a>复制粘贴到pcb文件中</h3>
     
   </div>
 
@@ -248,10 +243,10 @@ ga('send', 'pageview');
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2019/05/13/封装/">
+    <a class="show pull-left" href="/2019/05/27/linux系统信息指令/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2019/05/27/linux系统信息指令/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>

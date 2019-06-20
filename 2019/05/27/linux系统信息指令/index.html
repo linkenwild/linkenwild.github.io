@@ -7,32 +7,31 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>如何添加店员提醒-微信收款小账本 | Embedded Developer | 嵌入式爱好者</title>
+  <title>linux系统信息指令 | Embedded Developer | 嵌入式爱好者</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="remind,">
+    <meta name="keywords" content="Linux,">
   
 
-  <meta name="description" content="如何设置使得在微信收款小程序中，添加店员接收通知–使得被添加的人能够：  接收你的收款通知 查看你当天的收款详情    第一步   第二步   第三步   第四步   第五步   搞定！">
-<meta name="keywords" content="remind">
+  <meta name="description" content="系统信息指令 data 显示当前信息   cal 显示当月日历  cal[参数][月份][年份] 命令参数 -1显示一个月的日历 -3显示系统前一个月，当月，下一个月的日历 -s显示星期天为一个星期的first day -m显示星期一为一个星期的first day -j显示在当年的第几天 -y显示当年年份的日历    显示当前月份的日历 显示指定月份的日历 显示某一年的月份 天数">
+<meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何添加店员提醒-微信收款小账本">
-<meta property="og:url" content="http://yoursite.com/2019/05/17/如何添加店员提醒-微信收款小账本/index.html">
+<meta property="og:title" content="linux系统信息指令">
+<meta property="og:url" content="http://yoursite.com/2019/05/27/linux系统信息指令/index.html">
 <meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
-<meta property="og:description" content="如何设置使得在微信收款小程序中，添加店员接收通知–使得被添加的人能够：  接收你的收款通知 查看你当天的收款详情    第一步   第二步   第三步   第四步   第五步   搞定！">
+<meta property="og:description" content="系统信息指令 data 显示当前信息   cal 显示当月日历  cal[参数][月份][年份] 命令参数 -1显示一个月的日历 -3显示系统前一个月，当月，下一个月的日历 -s显示星期天为一个星期的first day -m显示星期一为一个星期的first day -j显示在当年的第几天 -y显示当年年份的日历    显示当前月份的日历 显示指定月份的日历 显示某一年的月份 天数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan1.jpg">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan2.jpg">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan3.jpg">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan4.jpg">
-<meta property="og:image" content="https://linkenwild.github.io/images/wechatshoukuan5.jpg">
-<meta property="og:updated_time" content="2019-05-17T14:10:10.334Z">
+<meta property="og:image" content="https://linkenwild.github.io/images/cal.png">
+<meta property="og:image" content="https://linkenwild.github.io/images/cal1.png">
+<meta property="og:image" content="https://linkenwild.github.io/images/fen.png">
+<meta property="og:image" content="https://linkenwild.github.io/images/tianshu.png">
+<meta property="og:updated_time" content="2019-05-27T12:55:20.378Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何添加店员提醒-微信收款小账本">
-<meta name="twitter:description" content="如何设置使得在微信收款小程序中，添加店员接收通知–使得被添加的人能够：  接收你的收款通知 查看你当天的收款详情    第一步   第二步   第三步   第四步   第五步   搞定！">
-<meta name="twitter:image" content="https://linkenwild.github.io/images/wechatshoukuan1.jpg">
+<meta name="twitter:title" content="linux系统信息指令">
+<meta name="twitter:description" content="系统信息指令 data 显示当前信息   cal 显示当月日历  cal[参数][月份][年份] 命令参数 -1显示一个月的日历 -3显示系统前一个月，当月，下一个月的日历 -s显示星期天为一个星期的first day -m显示星期一为一个星期的first day -j显示在当年的第几天 -y显示当年年份的日历    显示当前月份的日历 显示指定月份的日历 显示某一年的月份 天数">
+<meta name="twitter:image" content="https://linkenwild.github.io/images/cal.png">
   
   
 
@@ -143,20 +142,20 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第一步"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第二步"><span class="toc-text">第二步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第三步"><span class="toc-text">第三步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第四步"><span class="toc-text">第四步</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#第五步"><span class="toc-text">第五步</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#搞定！"><span class="toc-text">搞定！</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#系统信息指令"><span class="toc-text">系统信息指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#data"><span class="toc-text">data</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cal"><span class="toc-text">cal</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#cal-参数-月份-年份"><span class="toc-text">cal[参数][月份][年份]</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#命令参数"><span class="toc-text">命令参数</span></a></li></ol></li></ol></li></ol></li></ol>
   </div>
 
 
 
 <div class="content content-post CENTER">
-   <article id="post-如何添加店员提醒-微信收款小账本" class="article article-type-post" itemprop="blogPost">
+   <article id="post-linux系统信息指令" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">如何添加店员提醒-微信收款小账本</h1>
+    <h1 class="post-title">linux系统信息指令</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2019.05.17</span>
+        <span>2019.05.27</span>
       </span>
 
       
@@ -169,7 +168,7 @@ ga('send', 'pageview');
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/生活杂记/">生活杂记</a>
+    <a class="article-category-link" href="/categories/Linux学习/">Linux学习</a>
   </span>
 
 
@@ -189,29 +188,32 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <p>如何设置使得在微信收款小程序中，添加店员接收通知–使得被添加的人能够：</p>
-<ul>
-<li>接收你的收款通知</li>
-<li>查看你当天的收款详情</li>
+      <h1 id="系统信息指令"><a href="#系统信息指令" class="headerlink" title="系统信息指令"></a>系统信息指令</h1><hr>
+<h2 id="data"><a href="#data" class="headerlink" title="data"></a>data</h2><blockquote>
+<p>显示当前信息</p>
+</blockquote>
+<hr>
+<h2 id="cal"><a href="#cal" class="headerlink" title="cal"></a>cal</h2><blockquote>
+<p>显示当月日历</p>
+</blockquote>
+<h3 id="cal-参数-月份-年份"><a href="#cal-参数-月份-年份" class="headerlink" title="cal[参数][月份][年份]"></a>cal[参数][月份][年份]</h3><hr>
+<h4 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h4><ul>
+<li>-1显示一个月的日历</li>
+<li>-3显示系统前一个月，当月，下一个月的日历</li>
+<li>-s显示星期天为一个星期的first day</li>
+<li>-m显示星期一为一个星期的first day</li>
+<li>-j显示在当年的第几天</li>
+<li>-y显示当年年份的日历</li>
 </ul>
 <hr>
+<ol>
+<li>显示当前月份的日历<br><img src="https://linkenwild.github.io/images/cal.png" alt></li>
+<li>显示指定月份的日历<br><img src="https://linkenwild.github.io/images/cal1.png" alt></li>
+<li>显示某一年的月份<br><img src="https://linkenwild.github.io/images/fen.png" alt></li>
+<li>天数<br><img src="https://linkenwild.github.io/images/tianshu.png" alt></li>
+</ol>
 <hr>
-<h1 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan1.jpg" alt></p>
-<hr>
-<hr>
-<h1 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan2.jpg" alt></p>
-<hr>
-<hr>
-<h1 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan3.jpg" alt></p>
-<hr>
-<hr>
-<h1 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan4.jpg" alt></p>
-<hr>
-<hr>
-<h1 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h1><p><img src="https://linkenwild.github.io/images/wechatshoukuan5.jpg" alt></p>
-<hr>
-<hr>
-<h2 id="搞定！"><a href="#搞定！" class="headerlink" title="搞定！"></a>搞定！</h2>
+
     
   </div>
 
@@ -248,10 +250,10 @@ ga('send', 'pageview');
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2019/05/13/封装/">
+    <a class="show pull-left" href="/2019/05/17/如何添加店员提醒-微信收款小账本/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2019/05/27/linux系统信息指令/">
+    <a class="show pull-right" href="/2019/06/04/bmp2pcb软件使用/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
