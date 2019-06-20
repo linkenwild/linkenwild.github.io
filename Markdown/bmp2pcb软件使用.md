@@ -35,3 +35,7 @@ ____
 ![](https://linkenwild.github.io/images/logo.jpg)
 ### 复制粘贴到pcb文件中
 
+____
+____
+本文 Markdown 地址: [bmp2pcb软件使用.md](https://github.com/linkenwild/linkenwild.github.io/tree/master/Markdown/bmp2pcb软件使用.md)
+___
