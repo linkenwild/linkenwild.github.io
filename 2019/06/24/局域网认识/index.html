@@ -7,28 +7,28 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>多信道并发通信 | Embedded Developer | 嵌入式爱好者</title>
+  <title>局域网认识 | Embedded Developer | 嵌入式爱好者</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="通信,">
+    <meta name="keywords" content="技术分享,">
   
 
-  <meta name="description" content="title: 多信道并发通信 date: 2019-04-11 15:41:18 updated: 2019-04-15 20:18:54 可靠传输——  单跳重传 端到端重传  注意： 对节点在新信道工作时间进行限制，避免因为切换新信道而无法接收到原信道数据的情况。  2019/4/11 9:48:03    本文 Markdown 地址: 多信道并发通信.md">
-<meta name="keywords" content="通信">
+  <meta name="description" content="局域网与交换机 以实验室为例 实验室进来的是一根网线，网线连接路由器，从路由器出来一根网线接到交换机端口上，实验室所有的台式主机各使用一根网线连接到交换机端口上。路由器具有开启wifi功能。 交换机ip为192.168.3.1，实验室所有电脑都会分配一个临时ip为192.168.3.xx（x是2-255）。手机连接路由器上的wifi热点，也会随机的分配192.168.3.xx（x是2-255）">
+<meta name="keywords" content="技术分享">
 <meta property="og:type" content="article">
-<meta property="og:title" content="多信道并发通信">
-<meta property="og:url" content="http://yoursite.com/2019/04/11/多信道并发通信/index.html">
+<meta property="og:title" content="局域网认识">
+<meta property="og:url" content="http://yoursite.com/2019/06/24/局域网认识/index.html">
 <meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
-<meta property="og:description" content="title: 多信道并发通信 date: 2019-04-11 15:41:18 updated: 2019-04-15 20:18:54 可靠传输——  单跳重传 端到端重传  注意： 对节点在新信道工作时间进行限制，避免因为切换新信道而无法接收到原信道数据的情况。  2019/4/11 9:48:03    本文 Markdown 地址: 多信道并发通信.md">
+<meta property="og:description" content="局域网与交换机 以实验室为例 实验室进来的是一根网线，网线连接路由器，从路由器出来一根网线接到交换机端口上，实验室所有的台式主机各使用一根网线连接到交换机端口上。路由器具有开启wifi功能。 交换机ip为192.168.3.1，实验室所有电脑都会分配一个临时ip为192.168.3.xx（x是2-255）。手机连接路由器上的wifi热点，也会随机的分配192.168.3.xx（x是2-255）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://linkenwild.github.io/images/circuit.jpg">
-<meta property="og:updated_time" content="2019-06-20T07:24:27.527Z">
+<meta property="og:image" content="https://linkenwild.github.io/images/juyuwang.jpg">
+<meta property="og:updated_time" content="2019-06-24T08:54:02.753Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="多信道并发通信">
-<meta name="twitter:description" content="title: 多信道并发通信 date: 2019-04-11 15:41:18 updated: 2019-04-15 20:18:54 可靠传输——  单跳重传 端到端重传  注意： 对节点在新信道工作时间进行限制，避免因为切换新信道而无法接收到原信道数据的情况。  2019/4/11 9:48:03    本文 Markdown 地址: 多信道并发通信.md">
-<meta name="twitter:image" content="https://linkenwild.github.io/images/circuit.jpg">
+<meta name="twitter:title" content="局域网认识">
+<meta name="twitter:description" content="局域网与交换机 以实验室为例 实验室进来的是一根网线，网线连接路由器，从路由器出来一根网线接到交换机端口上，实验室所有的台式主机各使用一根网线连接到交换机端口上。路由器具有开启wifi功能。 交换机ip为192.168.3.1，实验室所有电脑都会分配一个临时ip为192.168.3.xx（x是2-255）。手机连接路由器上的wifi热点，也会随机的分配192.168.3.xx（x是2-255）">
+<meta name="twitter:image" content="https://linkenwild.github.io/images/juyuwang.jpg">
   
   
 
@@ -137,17 +137,22 @@ ga('send', 'pageview');
 </div>
 
 
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#局域网与交换机"><span class="toc-text">局域网与交换机</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#以实验室为例"><span class="toc-text">以实验室为例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#局域网典型拓扑图"><span class="toc-text">局域网典型拓扑图</span></a></li></ol></li></ol>
+  </div>
+
 
 
 <div class="content content-post CENTER">
-   <article id="post-多信道并发通信" class="article article-type-post" itemprop="blogPost">
+   <article id="post-局域网认识" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">多信道并发通信</h1>
+    <h1 class="post-title">局域网认识</h1>
 
     <div class="article-meta">
       <span>
         <i class="icon-calendar"></i>
-        <span>2019.04.11</span>
+        <span>2019.06.24</span>
       </span>
 
       
@@ -160,7 +165,7 @@ ga('send', 'pageview');
       
   <span class="article-category">
     <i class="icon-list"></i>
-    <a class="article-category-link" href="/categories/设计/">设计</a>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
   </span>
 
 
@@ -180,19 +185,17 @@ ga('send', 'pageview');
 
   <div class="article-content">
     
-      <p><code>title: 多信道并发通信 date: 2019-04-11 15:41:18 updated: 2019-04-15 20:18:54</code></p>
-<p>可靠传输——</p>
-<ul>
-<li>单跳重传</li>
-<li>端到端重传</li>
-</ul>
-<p><em>注意</em>：</p>
-<pre><code>对节点在新信道工作时间进行限制，避免因为切换新信道而无法接收到原信道数据的情况。
-</code></pre><p><img src="https://linkenwild.github.io/images/circuit.jpg" alt></p>
-<p><em>2019/4/11 9:48:03 </em></p>
+      <h1 id="局域网与交换机"><a href="#局域网与交换机" class="headerlink" title="局域网与交换机"></a>局域网与交换机</h1><hr>
+<h2 id="以实验室为例"><a href="#以实验室为例" class="headerlink" title="以实验室为例"></a>以实验室为例</h2><hr>
+<p>实验室进来的是一根网线，网线连接路由器，从路由器出来一根网线接到交换机端口上，实验室所有的台式主机各使用一根网线连接到交换机端口上。路由器具有开启wifi功能。</p>
+<p>交换机ip为192.168.3.1，实验室所有电脑都会分配一个临时ip为192.168.3.xx（x是2-255）。手机连接路由器上的wifi热点，也会随机的分配192.168.3.xx（x是2-255）</p>
+<hr>
+<h2 id="局域网典型拓扑图"><a href="#局域网典型拓扑图" class="headerlink" title="局域网典型拓扑图"></a>局域网典型拓扑图</h2><hr>
+<p><img src="https://linkenwild.github.io/images/juyuwang.jpg" alt></p>
 <hr>
 <hr>
-<p>本文 Markdown 地址: <a href="https://github.com/linkenwild/linkenwild.github.io/tree/master/Markdown/多信道并发通信.md" target="_blank" rel="noopener">多信道并发通信.md</a></p>
+<hr>
+<p>本文 Markdown 地址: <a href="https://github.com/linkenwild/linkenwild.github.io/tree/master/Markdown/局域网认识.md" target="_blank" rel="noopener">局域网认识.md</a></p>
 <hr>
 
     
@@ -231,10 +234,10 @@ ga('send', 'pageview');
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2019/04/10/多信道分层分簇/">
+    <a class="show pull-left" href="/2019/06/20/自己收藏的链接-备份/">
         <i class="icon icon-angle-left"></i>
     </a>
-    <a class="show pull-right" href="/2019/04/21/2019年的第一件数码新品/">
+    <a class="hide pull-right" href="/">
         <i class="icon icon-angle-right"></i>
     </a>
   </div>
