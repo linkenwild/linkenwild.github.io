@@ -26,7 +26,7 @@
 <meta property="og:image" content="https://linkenwild.github.io/images/cushouyingjian.jpg">
 <meta property="og:image" content="https://linkenwild.github.io/images/USB2TTL.jpg">
 <meta property="og:image" content="https://linkenwild.github.io/images/tongxin.png">
-<meta property="og:updated_time" content="2019-07-25T15:07:32.425Z">
+<meta property="og:updated_time" content="2019-07-26T01:27:00.850Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="簇首节点两个ZigBee通信">
 <meta name="twitter:description" content="簇首节点的通信 通信实验测试过程   电脑上打开两个串口调试助手 将簇首节点硬件板上电烧录程序运行 需要四个ZigBee模块  簇首节点硬件实物图如下：  配置过程  串口调试助手通过USB转TTL线连接ZigBee模块。打开ZigBee配置软件配置节点本机地址为0x2013目标地址为0x2016，运行在CH25信道上。 配置簇首节点与USART4连接的ZigBee模块，打开ZigBee配置软件配">
@@ -141,7 +141,7 @@ ga('send', 'pageview');
 
   <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#簇首节点的通信"><span class="toc-text">簇首节点的通信</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#通信实验测试过程"><span class="toc-text">通信实验测试过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置过程"><span class="toc-text">配置过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置簇首节点与USART4连接的ZigBee模块，打开ZigBee配置软件配置节点本机地址为0x2016目标地址为0x2013，运行在CH25信道上。"><span class="toc-text">配置簇首节点与USART4连接的ZigBee模块，打开ZigBee配置软件配置节点本机地址为0x2016目标地址为0x2013，运行在CH25信道上。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置簇首节点与USART1连接的ZigBee模块，打开ZigBee配置软件配置节点本机地址为0x2013目标地址为0x20143，运行在CH26信道上。"><span class="toc-text">配置簇首节点与USART1连接的ZigBee模块，打开ZigBee配置软件配置节点本机地址为0x2013目标地址为0x20143，运行在CH26信道上。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数据流向"><span class="toc-text">数据流向</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本文-Markdown-地址-局域网认识-md"><span class="toc-text">本文 Markdown 地址: 局域网认识.md</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#簇首节点的通信"><span class="toc-text">簇首节点的通信</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#通信实验测试过程"><span class="toc-text">通信实验测试过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置过程"><span class="toc-text">配置过程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置簇首节点与USART4连接的ZigBee模块，打开ZigBee配置软件配置节点本机地址为0x2016目标地址为0x2013，运行在CH25信道上。"><span class="toc-text">配置簇首节点与USART4连接的ZigBee模块，打开ZigBee配置软件配置节点本机地址为0x2016目标地址为0x2013，运行在CH25信道上。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置簇首节点与USART1连接的ZigBee模块，打开ZigBee配置软件配置节点本机地址为0x2013目标地址为0x20143，运行在CH26信道上。"><span class="toc-text">配置簇首节点与USART1连接的ZigBee模块，打开ZigBee配置软件配置节点本机地址为0x2013目标地址为0x20143，运行在CH26信道上。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数据流向"><span class="toc-text">数据流向</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本文-Markdown-地址-簇首节点两个ZigBee通信-md"><span class="toc-text">本文 Markdown 地址: 簇首节点两个ZigBee通信.md</span></a></li></ol>
   </div>
 
 
@@ -213,7 +213,7 @@ ga('send', 'pageview');
 <p>此过程详细流程如图所示：<br><img src="https://linkenwild.github.io/images/tongxin.png" alt></p>
 <hr>
 <hr>
-<h2 id="本文-Markdown-地址-局域网认识-md"><a href="#本文-Markdown-地址-局域网认识-md" class="headerlink" title="本文 Markdown 地址: 局域网认识.md"></a>本文 Markdown 地址: <a href="https://github.com/linkenwild/linkenwild.github.io/tree/master/Markdown/簇首节点两个ZigBee通信.md" target="_blank" rel="noopener">局域网认识.md</a></h2>
+<h2 id="本文-Markdown-地址-簇首节点两个ZigBee通信-md"><a href="#本文-Markdown-地址-簇首节点两个ZigBee通信-md" class="headerlink" title="本文 Markdown 地址: 簇首节点两个ZigBee通信.md"></a>本文 Markdown 地址: <a href="https://github.com/linkenwild/linkenwild.github.io/tree/master/Markdown/簇首节点两个ZigBee通信.md" target="_blank" rel="noopener">簇首节点两个ZigBee通信.md</a></h2>
     
   </div>
 
