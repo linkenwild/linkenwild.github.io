@@ -32,8 +32,6 @@ ___________
 ______________
 ![](https://linkenwild.github.io/images/DMA1.jpg)
 ----
-![](https://linkenwild.github.io/images/DMA2.jpg)
------
 ![](https://linkenwild.github.io/images/DMA3.jpg)
 ----
 ![](https://linkenwild.github.io/images/DMA4.jpg)
@@ -58,5 +56,5 @@ ___________
 ————————————————————
 -------
 -------
-本文 Markdown 地址: [STM32F072实现USART+DMA接收不定长数据以及DMA定长数据的发送.md](https://github.com/linkenwild/linkenwild.github.io/tree/master/Markdown/STM32F072实现USART+DMA接收不定长数据以及DMA定长数据的发送.md)
+本文 Markdown 地址: [STM32F072实现USART+DMA接收不定长数据以及DMA定长数据的发送.md](https://github.com/linkenwild/linkenwild.github.io/blob/master/Markdown/STM32F072实现USART+DMA接收不定长数据以及DMA定长数据的发送.md)
 ---------
