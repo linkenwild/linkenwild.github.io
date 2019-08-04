@@ -1,5 +1,5 @@
 ---
-title: STM32F072实现USART+DMA接收不定长数据以及DMA定长数据的发送
+title: 实现USART+DMA接收不定长数据以及DMA定长数据的发送
 date: 2019-08-03 13:41:35
 categories: 嵌入式
 tags: STM32
@@ -30,19 +30,19 @@ __________
 # 源码程序
 ___________
 ______________
-![](https://linkenwild.github.io/images/DMA1.jpg)
+![](https://linkenwild.github.io/images/DMA1.png)
 ----
 ![](https://linkenwild.github.io/images/DMA3.jpg)
 ----
-![](https://linkenwild.github.io/images/DMA4.jpg)
+![](https://linkenwild.github.io/images/DMA4.png)
 ---
-![](https://linkenwild.github.io/images/DMA5.jpg)
+![](https://linkenwild.github.io/images/DMA5.png)
 ----
-![](https://linkenwild.github.io/images/DMA6.jpg)
+![](https://linkenwild.github.io/images/DMA6.png)
 -----
-![](https://linkenwild.github.io/images/DMA7.jpg)
+![](https://linkenwild.github.io/images/DMA7.png)
 ----
-![](https://linkenwild.github.io/images/DMA8.jpg)
+![](https://linkenwild.github.io/images/DMA8.png)
 ________
 ___________
 # 工程地址
@@ -56,6 +56,6 @@ ___________
 ————————————————————
 -------
 -------
-本文 Markdown 地址: [STM32F072实现USART+DMA接收不定长数据以及DMA定长数据的发送.md](https://github.com/linkenwild/linkenwild.github.io/blob/master/Markdown/STM32F072实现USART+DMA接收不定长数据以及DMA定长数据的发送.md)
+本文 Markdown 地址: [实现USART+DMA接收不定长数据以及DMA定长数据的发送.md](https://github.com/linkenwild/linkenwild.github.io/blob/master/Markdown/实现USART+DMA接收不定长数据以及DMA定长数据的发送.md)
 ---------
 -------
