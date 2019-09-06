@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+
+  <html class="light page-post">
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>Markdown教程 | Embedded Developer | 嵌入式爱好者</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="Markdown,">
+  
+
+  <meta name="description" content="一级标题二级标题三级标题四级标题五级标题六级标题  [只有六个级别的标题]一级标题一级标题 二级标题二级标题  这里是一段文字是否换行了方法一：换行使用两个空格+enter键方法二：在段落后面使用一个空行表示换行 字体选择2019/4/29 15:48:02   方法有两种斜体文字斜体文字  方法同样有两种粗体文字粗体文字    粗斜体文字粗斜体文字    删除线段落文字添加删除线 ，为两端加上两">
+<meta name="keywords" content="Markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown教程">
+<meta property="og:url" content="http://yoursite.com/2019/04/29/Markdown教程/index.html">
+<meta property="og:site_name" content="Embedded Developer | 嵌入式爱好者">
+<meta property="og:description" content="一级标题二级标题三级标题四级标题五级标题六级标题  [只有六个级别的标题]一级标题一级标题 二级标题二级标题  这里是一段文字是否换行了方法一：换行使用两个空格+enter键方法二：在段落后面使用一个空行表示换行 字体选择2019/4/29 15:48:02   方法有两种斜体文字斜体文字  方法同样有两种粗体文字粗体文字    粗斜体文字粗斜体文字    删除线段落文字添加删除线 ，为两端加上两">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://linkenwild.github.io/images/ziti.jpg">
+<meta property="og:image" content="https://linkenwild.github.io/images/xiahuaxian.jpg">
+<meta property="og:image" content="https://linkenwild.github.io/images/jiaozhu.jpg">
+<meta property="og:image" content="https://linkenwild.github.io/images/biaoge.jpg">
+<meta property="og:updated_time" content="2019-06-20T07:21:58.240Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown教程">
+<meta name="twitter:description" content="一级标题二级标题三级标题四级标题五级标题六级标题  [只有六个级别的标题]一级标题一级标题 二级标题二级标题  这里是一段文字是否换行了方法一：换行使用两个空格+enter键方法二：在段落后面使用一个空行表示换行 字体选择2019/4/29 15:48:02   方法有两种斜体文字斜体文字  方法同样有两种粗体文字粗体文字    粗斜体文字粗斜体文字    删除线段落文字添加删除线 ，为两端加上两">
+<meta name="twitter:image" content="https://linkenwild.github.io/images/ziti.jpg">
+  
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  <link href="/css/styles.css?v=c114cbeddx" rel="stylesheet">
+
+
+  
+    <link rel="stylesheet" href="/css/personal-style.css">
+  
+
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-139081885-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?2b87fdde6dd8340d87372eaba7bdba3e";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  
+  <script type="text/javascript">
+	(function(){
+	    var bp = document.createElement('script');
+	    var curProtocol = window.location.protocol.split(':')[0];
+	    if (curProtocol === 'https') {
+	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+	    }
+	    else {
+	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+	    }
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+  </script>
+
+
+
+  
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</html>
+<body>
+
+
+  
+    <span id="toolbox-mobile" class="toolbox-mobile">彩蛋</span>
+  
+
+  <div class="post-header CENTER">
+   
+  <div class="toolbox">
+    <a class="toolbox-entry" href="/">
+      <span class="toolbox-entry-text">彩蛋</span>
+      <i class="icon-angle-down"></i>
+      <i class="icon-home"></i>
+    </a>
+    <ul class="list-toolbox">
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+            博客
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+            关于
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/link/" rel="noopener noreferrer" target="_self">
+            友链
+          </a>
+        </li>
+      
+        <li class="item-toolbox">
+          <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</div>
+
+
+  <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一级标题"><span class="toc-text">一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#二级标题"><span class="toc-text">二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#三级标题"><span class="toc-text">三级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#四级标题"><span class="toc-text">四级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#五级标题"><span class="toc-text">五级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#六级标题"><span class="toc-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#只有六个级别的标题"><span class="toc-text"> [只有六个级别的标题]</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一级标题-1"><span class="toc-text">一级标题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一级标题-2"><span class="toc-text">一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#二级标题-1"><span class="toc-text">二级标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二级标题-2"><span class="toc-text">二级标题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#字体选择"><span class="toc-text">字体选择</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除线"><span class="toc-text">删除线</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#下划线"><span class="toc-text">下划线</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#脚注"><span class="toc-text">脚注</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码块"><span class="toc-text">代码块</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-链接"><span class="toc-text">Markdown 链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-图片"><span class="toc-text">Markdown 图片</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-表格"><span class="toc-text">Markdown 表格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他元素"><span class="toc-text">其他元素</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#引用"><span class="toc-text">引用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#流程图"><span class="toc-text">流程图</span></a></li></ol>
+  </div>
+
+
+
+<div class="content content-post CENTER">
+   <article id="post-Markdown教程" class="article article-type-post" itemprop="blogPost">
+  <header class="article-header">
+    <h1 class="post-title">Markdown教程</h1>
+
+    <div class="article-meta">
+      <span>
+        <i class="icon-calendar"></i>
+        <span>2019.04.29</span>
+      </span>
+
+      
+        <span class="article-author">
+          <i class="icon-user"></i>
+          <span>Linkenwild</span>
+        </span>
+      
+
+      
+  <span class="article-category">
+    <i class="icon-list"></i>
+    <a class="article-category-link" href="/categories/Markdown/">Markdown</a>
+  </span>
+
+
+
+      
+
+      
+      <i class="fa fa-eye"></i> 
+        <span id="busuanzi_container_page_pv">
+           &nbsp热度 <span id="busuanzi_value_page_pv">
+           <i class="fa fa-spinner fa-spin"></i></span>℃
+        </span>
+      
+      
+    </div>
+  </header>
+
+  <div class="article-content">
+    
+      <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr>
+<h2 id="只有六个级别的标题"><a href="#只有六个级别的标题" class="headerlink" title=" [只有六个级别的标题]"></a> <em>[只有六个级别的标题]</em></h2><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h1 id="一级标题-2"><a href="#一级标题-2" class="headerlink" title="一级标题"></a>一级标题</h1><hr>
+<h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h2 id="二级标题-2"><a href="#二级标题-2" class="headerlink" title="二级标题"></a>二级标题</h2><hr>
+<p><img src="https://linkenwild.github.io/images/ziti.jpg" alt></p>
+<p>这里是一段文字<br>是否换行了<br>方法一：换行使用两个空格+enter键<br>方法二：在段落后面使用一个空行表示换行</p>
+<h1 id="字体选择"><a href="#字体选择" class="headerlink" title="字体选择"></a>字体选择</h1><p>2019/4/29 15:48:02 </p>
+<hr>
+<p><strong><em>方法有两种</em></strong><br><em>斜体文字</em><br><em>斜体文字</em></p>
+<hr>
+<p><strong>方法同样有两种</strong><br><strong>粗体文字</strong><br><strong>粗体文字</strong>  </p>
+<hr>
+<p><strong><em>粗斜体文字</em></strong><br><strong><em>粗斜体文字</em></strong>  </p>
+<hr>
+<h1 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h1><p>段落文字添加删除线 ，为两端加上两个波浪线~~<br>即可</p>
+<p><strong>shell</strong><del>提示符</del></p>
+<hr>
+<p><del>BAIDU.COM</del>  </p>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>使用标签来实现<br><img src="https://linkenwild.github.io/images/xiahuaxian.jpg" alt="下划线">  </p>
+<p>&lt;Centos系统&gt;</p>
+<hr>
+<h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><hr>
+<p>编写简单的<a href="实现天空自由的翱翔！">^脚本实用工具</a>  </p>
+<p><img src="https://linkenwild.github.io/images/jiaozhu.jpg" alt>  </p>
+<ul>
+<li>one</li>
+<li>second</li>
+</ul>
+<ul>
+<li>three</li>
+<li>four</li>
+<li>five  </li>
+<li></li>
+</ul>
+<hr>
+<ol>
+<li>one</li>
+<li>second</li>
+<li>three</li>
+<li>four</li>
+<li>five</li>
+</ol>
+<hr>
+<ol>
+<li>一   <ul>
+<li>电饭锅</li>
+<li>勺子</li>
+</ul>
+</li>
+<li>——</li>
+</ol>
+<h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><hr>
+<p>如果是段落上的一个函数或片段的代码可以用反引号把它包起来</p>
+<pre class=" language-shell"><code class="language-shell">printf
+</code></pre>
+<p>   你也可以用</p>
+<blockquote>
+<p><code>`</code>    </p>
+</blockquote>
+<p>包裹一段代码，并指定一种语言（也可以不指定）：</p>
+<pre class=" language-shell"><code class="language-shell">printf();
+for(int a =0;i<10;i++); < code></10;i++);></code></pre>
+<hr>
+<h1 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h1><hr>
+<blockquote>
+<p>中括号后面跟着一个小括号，中括号是链接名称，小括号内是链接网址</p>
+</blockquote>
+<p><a href="https://www.runoob.com/" target="_blank" rel="noopener">菜鸟教程</a>  </p>
+<h1 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h1><hr>
+<ul>
+<li>开头感叹号</li>
+<li>接着一个方括号，方括号内放图片介绍文字</li>
+<li>接着小括号，小括号内放图片网址  </li>
+</ul>
+<hr>
+<h1 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h1><p><img src="https://linkenwild.github.io/images/biaoge.jpg" alt>  </p>
+<hr>
+<h1 id="其他元素"><a href="#其他元素" class="headerlink" title="其他元素"></a>其他元素</h1><hr>
+<hr>
+<p><kdb>Ctrl</kdb>+<kdb>Alt</kdb>+<kdb>Del</kdb>重启电脑</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><hr>
+<blockquote>
+<p>一级引用</p>
+<blockquote>
+<p>二级引用</p>
+<blockquote>
+<p>三级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<h1 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a><del>流程图</del></h1><pre class=" language-graph"><code class="language-graph">graph TD;
+    A-->B;
+    A-->C;
+    A-->D;
+    B-->E;
+    B-->F;
+    C-->G;
+    D-->H;
+    D-->I;
+    D-->J;
+    E-->L;
+    F-->L;
+    G-->L;
+    H-->L;
+    J-->L;
+    I-->L;
+    L-->W;
+</code></pre>
+<hr>
+<p>本文 Markdown 地址: <a href="https://github.com/linkenwild/linkenwild.github.io/tree/master/Markdown/Markdown教程.md" target="_blank" rel="noopener">Markdown教程.md</a></p>
+<hr>
+
+    
+  </div>
+
+</article>
+
+
+   
+  <div class="text-center donation">
+    <div class="inner-donation">
+      <span class="btn-donation">支持一下</span>
+      <div class="donation-body">
+        <div class="tip text-center">扫一扫，支持Linkenwild</div>
+        <ul>
+        
+          <li class="item">
+            
+              <span>微信扫一扫</span>
+            
+            <img src="/images/qr-wechat.jpg" alt>
+          </li>
+        
+          <li class="item">
+            
+              <span>支付宝扫一扫</span>
+            
+            <img src="/images/qr-alipay.jpg" alt>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+   
+  <div class="box-prev-next clearfix">
+    <a class="show pull-left" href="/2019/04/29/测试DEMO/">
+        <i class="icon icon-angle-left"></i>
+    </a>
+    <a class="show pull-right" href="/2019/05/01/事业考知乎经验笔记总结/">
+        <i class="icon icon-angle-right"></i>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+  <a id="backTop" class="back-top">
+    <i class="icon-angle-up"></i>
+  </a>
+
+
+
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+
+  <div class="modal" id="modal">
+  <span id="cover" class="cover hide"></span>
+  <div id="modal-dialog" class="modal-dialog hide-dialog">
+    <div class="modal-header">
+      <span id="close" class="btn-close">关闭</span>
+    </div>
+    <hr>
+    <div class="modal-body">
+      <ul class="list-toolbox">
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/archives/" rel="noopener noreferrer" target="_self">
+              博客
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/about/" rel="noopener noreferrer" target="_self">
+              关于
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/link/" rel="noopener noreferrer" target="_self">
+              友链
+            </a>
+          </li>
+        
+          <li class="item-toolbox">
+            <a class="CIRCLE" href="/search/" rel="noopener noreferrer" target="_self">
+              搜索
+            </a>
+          </li>
+        
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+  
+      <div class="fexo-comments comments-post">
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+    <div id="comment" class="vcomment"></div>
+    <script>
+        var notify = 'false' == true ? true : false;
+        var verify = 'false' == true ? true : false;
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+            return GUEST_INFO.indexOf(item) > -1
+        });
+        guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+        window.valine = new Valine({
+            el: '.vcomment',
+            notify: notify,
+            verify: verify,
+            appId: "9FBsnGRIYERxQlM4qBYIHi6G-gzGzoHsz",
+            appKey: "mqTkY115FKirXW4ovD8zKimy",
+            avatar:'mm',
+            placeholder: "Youth is not a period of time, it is a state of mind.",
+            guest_info:guest_info,
+            pageSize:'10'
+        });
+    </script>
+  
+    
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+  function loadScript(url, callback) {
+    var script = document.createElement('script')
+    script.type = 'text/javascript';
+
+    if (script.readyState) { //IE
+      script.onreadystatechange = function() {
+        if (script.readyState == 'loaded' ||
+          script.readyState == 'complete') {
+          script.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else { //Others
+      script.onload = function() {
+        callback();
+      };
+    }
+
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+
+  window.onload = function() {
+    loadScript('/js/bundle.js?235683', function() {
+      // load success
+    });
+  }
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":320},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script type="text/javascript" src="/js/src/love.js"></script>
+</html>
